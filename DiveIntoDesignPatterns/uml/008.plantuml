@@ -1,0 +1,15 @@
+@startuml 008_Cat
+class Cat {
+	+name
+	+gender
+	+age
+	+weight
+	+color
+
+	+breathe()
+	+eat(food)
+	+run(destination)
+	+sleep(hours)
+	+meow()
+}
+@enduml

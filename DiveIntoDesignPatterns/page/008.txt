@@ -1,0 +1,2 @@
+面向对象程序: Object-Oriented Programming: OOP, 
+OOP是一种范式(paradigm), 其基本理念是将数据和围绕该数据相关的行为封装而成的对象.

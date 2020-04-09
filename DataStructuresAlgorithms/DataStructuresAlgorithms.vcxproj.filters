@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Chapter01">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{198e8dd3-a6d0-4d35-b009-b9713402e845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chapter01\valuable">
+      <UniqueIdentifier>{0b08cc93-d9bf-498b-b47a-fa7f56781ed7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Chapter01\01.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\02.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\03.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\04.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\05.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\06.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\07.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\08.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\09.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\10.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\12.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\13.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\14.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\19.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\valuable\factorial.cpp">
+      <Filter>Chapter01\valuable</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\20_1.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\20_2.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\20_3.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\21_1.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\21_2.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\21_3.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\21_4.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\22_1.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\22_2.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\22_3.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+    <Text Include="math\03_factorial.txt">
+      <Filter>math</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="math\01_latex.pdf">
+      <Filter>math</Filter>
+    </None>
+    <None Include="math\02_sigma-∑.pdf">
+      <Filter>math</Filter>
+    </None>
+  </ItemGroup>
+</Project>

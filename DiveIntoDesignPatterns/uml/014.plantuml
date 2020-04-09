@@ -1,0 +1,21 @@
+@startuml
+
+class AirPlane {
+	- speed
+	- altitude
+	- rollAngle
+	- pitchAngle
+	- yawAngle
+
+	+ fly()
+}
+
+
+class Airplane {
+	- seats
+
+	+ reserveSeat(n)
+}
+
+
+@enduml

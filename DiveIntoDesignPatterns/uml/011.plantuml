@@ -1,0 +1,32 @@
+@startuml
+class Animal {
+	+name
+	+sex
+	+age
+	+weight
+	+color
+
+	+breathe()
+	+eat(food)
+	+run(destination)
+	+sleep(hours)
+}
+
+class Cat {
+	-isNasty: bool
+
+	+meow()
+}
+
+
+class Dog {
+	-bestFriend: Human
+
+	+bark()
+}
+
+
+Animal <|-- Cat: "继承"
+Animal <|-- Dog: "继承"
+
+@enduml

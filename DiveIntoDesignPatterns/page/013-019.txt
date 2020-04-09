@@ -1,0 +1,24 @@
+面向对象这种范式与其他范式主要的区别是: 抽象、封装、多态、继承, 这四个基本概念(面向对象多出这几个概念).
+
+
+抽象(Abstraction):
+	抽象的概念指的是针对具体的场景设定一个或多个类，每个类由一些数据属性(成员变量)和表现行为(成员函数)组成.
+
+
+封装(Encapsulation):
+	To encapsulate something means to make it private, and thus accessible only from within the methods of its own class.
+	封装某个内容意味着要将它私有化(private), 仅允许类内部调用它, 外部无法访问.
+	There's little bit less restrictive mode called protected that makes a member of a class available to subclass as well.
+	还有一种限制程度较小的关键字(protected), 允许派生类访问protected成员.
+
+
+继承(Inheritance)
+	The main benefit of inheritance is code reuse.
+	继承最主要的好处是代码复用.
+	You must also implement all abstract methods, even if they don’t make sense for your subclass.
+	你必须实现所有的抽象方法, 即便它们对你的子类而言没有意义.
+
+
+多态(Polymorphism)
+	多态是指程序能够检测出调度函数的实际对象, 并且根据继承和接口的声明去执行那个正确的函数.
+

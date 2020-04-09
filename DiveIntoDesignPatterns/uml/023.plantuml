@@ -1,0 +1,6 @@
+@startuml "组合"
+class 大学 {}
+class 院系 {}
+
+大学 *-right-> 院系
+@enduml
