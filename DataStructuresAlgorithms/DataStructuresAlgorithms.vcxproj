@@ -43,15 +43,20 @@
     <ClCompile Include="Chapter01\22_1.cpp" />
     <ClCompile Include="Chapter01\22_2.cpp" />
     <ClCompile Include="Chapter01\22_3.cpp" />
+    <ClCompile Include="Chapter01\23_1.cpp" />
+    <ClCompile Include="Chapter01\23_2.cpp" />
+    <ClCompile Include="Chapter01\23_3.cpp" />
+    <ClCompile Include="Chapter01\24.cpp" />
     <ClCompile Include="Chapter01\valuable\factorial.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="math\03_factorial.txt" />
-    <Text Include="README.txt" />
+    <Text Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="math\01_latex.pdf" />
     <None Include="math\02_sigma-∑.pdf" />
+    <None Include="math\README.md" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

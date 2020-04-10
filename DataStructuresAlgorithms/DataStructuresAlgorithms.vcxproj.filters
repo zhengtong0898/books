@@ -88,18 +88,33 @@
     <ClCompile Include="Chapter01\22_3.cpp">
       <Filter>Chapter01</Filter>
     </ClCompile>
+    <ClCompile Include="Chapter01\23_1.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\23_2.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\23_3.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\24.cpp">
+      <Filter>Chapter01</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="README.txt" />
     <Text Include="math\03_factorial.txt">
       <Filter>math</Filter>
     </Text>
+    <Text Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="math\01_latex.pdf">
       <Filter>math</Filter>
     </None>
     <None Include="math\02_sigma-∑.pdf">
+      <Filter>math</Filter>
+    </None>
+    <None Include="math\README.md">
       <Filter>math</Filter>
     </None>
   </ItemGroup>

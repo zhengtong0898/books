@@ -13,7 +13,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="README.txt" />
     <Text Include="page\006.txt">
       <Filter>page</Filter>
     </Text>
@@ -33,6 +32,7 @@
     <Text Include="page\037-050.txt">
       <Filter>page</Filter>
     </Text>
+    <Text Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

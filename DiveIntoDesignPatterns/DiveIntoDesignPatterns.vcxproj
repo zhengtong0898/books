@@ -155,7 +155,7 @@
     <Text Include="page\013-019.txt" />
     <Text Include="page\020-025.txt" />
     <Text Include="page\037-050.txt" />
-    <Text Include="README.txt" />
+    <Text Include="README.md" />
     <Text Include="todo.txt" />
     <Text Include="uml\README.txt" />
   </ItemGroup>
