@@ -30,7 +30,7 @@
     <Text Include="page\020-025.txt">
       <Filter>page</Filter>
     </Text>
-    <Text Include="page\037.txt">
+    <Text Include="page\037-050.txt">
       <Filter>page</Filter>
     </Text>
   </ItemGroup>
@@ -69,6 +69,12 @@
       <Filter>uml</Filter>
     </None>
     <None Include="uml\023.plantuml">
+      <Filter>uml</Filter>
+    </None>
+    <None Include="uml\041.plantuml">
+      <Filter>uml</Filter>
+    </None>
+    <None Include="uml\050.plantuml">
       <Filter>uml</Filter>
     </None>
   </ItemGroup>

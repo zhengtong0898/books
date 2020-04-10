@@ -154,7 +154,7 @@
     <Text Include="page\008.txt" />
     <Text Include="page\013-019.txt" />
     <Text Include="page\020-025.txt" />
-    <Text Include="page\037.txt" />
+    <Text Include="page\037-050.txt" />
     <Text Include="README.txt" />
     <Text Include="todo.txt" />
     <Text Include="uml\README.txt" />
@@ -171,6 +171,8 @@
     <None Include="uml\021.plantuml" />
     <None Include="uml\022.plantuml" />
     <None Include="uml\023.plantuml" />
+    <None Include="uml\041.plantuml" />
+    <None Include="uml\050.plantuml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

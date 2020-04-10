@@ -1,0 +1,37 @@
+@startuml "组合优于继承"
+class Transport << 运输  >> {
+	- engine
+	- driver
+
+	+ deliver(destination, cargo)
+}
+
+
+class Engine << interface >> {
+	+ move()
+}
+
+
+class Driver <<  interface  >> {
+	+ navigate()
+}
+
+
+
+class CombustionEngine {}
+class ElectricEngine {}
+class Robot {}
+class Human {}
+
+
+Transport *--> Engine: "组合"
+Transport o--> Driver: "聚合"
+
+Engine <|.. CombustionEngine: 继承
+Engine <|.. ElectricEngine: 继承
+
+Driver <|.. Robot: "继承"
+Driver <|.. Human: "继承"
+
+
+@enduml
