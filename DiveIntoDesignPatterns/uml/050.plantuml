@@ -27,11 +27,11 @@ class Human {}
 Transport *--> Engine: "组合"
 Transport o--> Driver: "聚合"
 
-Engine <|.. CombustionEngine: 继承
-Engine <|.. ElectricEngine: 继承
+Engine <|.. CombustionEngine: "接口"
+Engine <|.. ElectricEngine: "接口"
 
-Driver <|.. Robot: "继承"
-Driver <|.. Human: "继承"
+Driver <|.. Robot: "接口"
+Driver <|.. Human: "接口"
 
 
 @enduml
