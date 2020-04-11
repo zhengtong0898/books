@@ -35,7 +35,9 @@
     <Text Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="confirm\015.cpp">
+      <Filter>confirm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="uml\008.plantuml">

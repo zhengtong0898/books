@@ -2,5 +2,5 @@
 class 教授 {}
 class 学生 {}
 
-教授 -right-> 学生
+教授 -right-> 学生: 关联
 @enduml

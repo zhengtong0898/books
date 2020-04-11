@@ -147,7 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="confirm\015.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="page\006.txt" />
