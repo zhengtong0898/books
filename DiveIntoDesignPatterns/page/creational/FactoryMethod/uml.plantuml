@@ -1,0 +1,42 @@
+@startuml
+
+
+class Creator {
+	+ someOperation()
+	+ {abstract} Product createProduct()
+}
+
+
+class ConcreteCreatorA {
+	+ Product createProduct();
+}
+
+
+class ConcreteCreatorB {
+	+ Product createProduct();
+}
+
+
+interface Product << interface >> {
+	+ doStuff()
+}
+
+
+class ConcreteProductA {
+	+ doStuff()
+}
+
+
+class ConcreteProductB {
+	+ doStuff()
+}
+
+
+Creator -right-> Product: "    关联    "
+Creator <|-- ConcreteCreatorA: "继承"
+Creator <|-- ConcreteCreatorB: "继承"
+Product <|.. ConcreteProductA: "接口"
+Product <|.. ConcreteProductB: "接口"
+
+
+@enduml
