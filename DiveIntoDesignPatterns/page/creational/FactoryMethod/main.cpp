@@ -1,6 +1,8 @@
 #include <iostream>
 
 
+// 定义了一个接口后, 继承这个接口的派生类总是要实现这个接口
+// 因此其他类对象依赖这个对象或者关联这个派生类对象之后, 一定能访问到这个方法.
 class Product {
 public:
     virtual void doStuff() = 0;
@@ -9,7 +11,6 @@ public:
 
 class ConcreteProductA: public Product {
 public:
-    ConcreteProductA() {}
     void doStuff() {
         std::cout << "doSuff in ConcreteProductA" << std::endl;
     }
@@ -18,7 +19,6 @@ public:
 
 class ConcreteProductB : public Product {
 public:
-    ConcreteProductB() {}
     void doStuff() {
         std::cout << "doSuff in ConcreteProductB" << std::endl;
     }
@@ -39,7 +39,6 @@ public:
 
 class ConcreteCreateA : public Creator {
 public:
-    ConcreteCreateA() {}
     Product * createProduct() {
         return new ConcreteProductA;
     }
@@ -48,7 +47,6 @@ public:
 
 class ConcreteCreateB : public Creator {
 public:
-    ConcreteCreateB() {}
     Product* createProduct() {
         return new ConcreteProductB;
     }
