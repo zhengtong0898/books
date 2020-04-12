@@ -11,6 +11,18 @@
     <Filter Include="confirm">
       <UniqueIdentifier>{4d774994-5e72-46f5-b390-51d006b5c998}</UniqueIdentifier>
     </Filter>
+    <Filter Include="page\creational">
+      <UniqueIdentifier>{2957536b-1fb0-4184-b399-323be2c2475b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="page\structural">
+      <UniqueIdentifier>{b7c5eaa0-10f7-4a74-8926-53dec7320ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="page\behavioral">
+      <UniqueIdentifier>{7ade287b-4f7f-4fd3-9f84-f47231ed92c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="page\creational\FactoryMethod">
+      <UniqueIdentifier>{7d93b614-2c10-4b02-85a6-f20c3428e943}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="page\006.txt">
@@ -29,14 +41,17 @@
     <Text Include="page\020-025.txt">
       <Filter>page</Filter>
     </Text>
-    <Text Include="page\037-050.txt">
+    <Text Include="README.md" />
+    <Text Include="page\037-069.txt">
       <Filter>page</Filter>
     </Text>
-    <Text Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="confirm\015.cpp">
       <Filter>confirm</Filter>
+    </ClCompile>
+    <ClCompile Include="page\creational\FactoryMethod\main.cpp">
+      <Filter>page\creational\FactoryMethod</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +93,12 @@
     </None>
     <None Include="uml\050.plantuml">
       <Filter>uml</Filter>
+    </None>
+    <None Include="page\creational\README.md">
+      <Filter>page\creational</Filter>
+    </None>
+    <None Include="page\creational\FactoryMethod\uml.plantuml">
+      <Filter>page\creational\FactoryMethod</Filter>
     </None>
   </ItemGroup>
 </Project>

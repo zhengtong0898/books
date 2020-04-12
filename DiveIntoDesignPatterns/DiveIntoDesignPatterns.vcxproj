@@ -148,18 +148,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="confirm\015.cpp" />
+    <ClCompile Include="page\creational\FactoryMethod\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="page\006.txt" />
     <Text Include="page\008.txt" />
     <Text Include="page\013-019.txt" />
     <Text Include="page\020-025.txt" />
-    <Text Include="page\037-050.txt" />
+    <Text Include="page\037-069.txt" />
     <Text Include="README.md" />
     <Text Include="todo.txt" />
     <Text Include="uml\README.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="page\creational\FactoryMethod\uml.plantuml" />
+    <None Include="page\creational\README.md" />
     <None Include="uml\008.plantuml" />
     <None Include="uml\011.plantuml" />
     <None Include="uml\012.plantuml" />

@@ -3,6 +3,9 @@
 #include <assert.h>
 
 
+// 验证父类中protected的成员变量可以被派生类访问到.
+
+
 class Animal015 {
 private:
     std::string gender;
