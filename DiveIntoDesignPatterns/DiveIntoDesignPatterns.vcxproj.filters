@@ -23,6 +23,9 @@
     <Filter Include="page\creational\FactoryMethod">
       <UniqueIdentifier>{7d93b614-2c10-4b02-85a6-f20c3428e943}</UniqueIdentifier>
     </Filter>
+    <Filter Include="page\creational\AbstractFactory">
+      <UniqueIdentifier>{f13c5213-41bd-48e3-a9c4-8310b41eb40d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="page\006.txt">
@@ -99,6 +102,9 @@
     </None>
     <None Include="page\creational\FactoryMethod\uml.plantuml">
       <Filter>page\creational\FactoryMethod</Filter>
+    </None>
+    <None Include="page\creational\AbstractFactory\uml.plantuml">
+      <Filter>page\creational\AbstractFactory</Filter>
     </None>
   </ItemGroup>
 </Project>

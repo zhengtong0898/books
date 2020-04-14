@@ -1,0 +1,25 @@
+@startuml 008_Cat "class"
+
+
+class Cat {
+	+ std::string name
+	+ std::string gender
+	+ int age
+	+ int weight
+	+ std::string color
+	  
+	+ breathe()
+	+ eat(food)
+	+ run(destination)
+	+ sleep(hours)
+	+ meow()
+}
+
+
+note "备注: \n\
+一个类对象负责维护一组数据(成员变量)和一组行为(成员方法). \n\
+类在默认情况下它的数据和行为都是私有化的, 除非声明public. \n\
+" as n1
+
+
+@enduml

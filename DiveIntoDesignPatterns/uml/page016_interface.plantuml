@@ -1,0 +1,48 @@
+@startuml
+class Airport {
+	+ accept(vehicle: FlyingTransport)
+}
+
+
+interface FlyingTransport <<Interface>> {
+	+ fly(origin, destination passengers)
+}
+
+
+class Helicopter {
+	+ fly(origin, destination passengers)
+}
+
+
+class AirPlane {
+	+ fly(origin, destination passengers)
+}
+
+
+class DomesticatedGryphon {
+	+ fly(origin, destination passengers)
+}
+
+
+Airport --> FlyingTransport: "依赖"
+FlyingTransport <|.. Helicopter: "实现接口"
+FlyingTransport <|.. AirPlane: "实现接口"
+FlyingTransport <|.. DomesticatedGryphon: "实现接口"
+
+
+hide FlyingTransport circle
+note "备注\n\
+accept方法的形参要求的类型是 FlyingTransport, \n\
+accept方法运行结束后就会释放 FlyingTransport, \n\
+这种短暂的关系被称为: 依赖关系.\
+" as n1
+Airport .right. n1
+
+note "备注\n\
+FlyingTransport是一个接口, 它不能有成员变量, \n\
+因为接口不维护任何数据和状态, 只是对外声明一组标准行为操作. \n\n\
+补充: 接口的派生对象才需要维护它自己的数据和状态(成员变量). \
+" as n2
+FlyingTransport .right. n2
+
+@enduml

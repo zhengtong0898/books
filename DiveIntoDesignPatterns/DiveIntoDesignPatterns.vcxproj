@@ -161,6 +161,7 @@
     <Text Include="uml\README.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="page\creational\AbstractFactory\uml.plantuml" />
     <None Include="page\creational\FactoryMethod\uml.plantuml" />
     <None Include="page\creational\README.md" />
     <None Include="uml\008.plantuml" />

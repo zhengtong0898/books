@@ -1,4 +1,4 @@
-@startuml
+@startuml "继承"
 class Animal {
 	+name
 	+sex
@@ -28,5 +28,12 @@ class Dog {
 
 Animal <|-- Cat: "继承"
 Animal <|-- Dog: "继承"
+
+
+note "备注: \n\
+通过继承, 派生类(Cat和Dog)可以扩展基类. \n\
+派生类分别扩展了一个成员变量和一个成员方法. \
+" as n1
+
 
 @enduml

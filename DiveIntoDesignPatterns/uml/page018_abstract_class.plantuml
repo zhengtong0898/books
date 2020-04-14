@@ -1,0 +1,40 @@
+@startuml
+
+
+abstract class Animal {
+	+ {abstract} void makeSound()
+}
+
+
+class Cat {
+	+ makeSound()
+}
+
+
+class Dog {
+	+ makeSound()
+}
+
+
+Animal <|-- Cat
+Animal <|-- Dog
+
+note "备注: \n\
+抽象类和接口类有什么区别? \n\
+区别1: 接口类不维护数据和状态, 抽象类可能会维护(取决于需要).\n\
+区别2: 接口类不做任何实现, 抽象类可以做默认实现.\n\
+区别3: 接口类是为了接口而存在, 它所有的接口都是公开的. \n\
+           抽象类是为了将某个功能扩展化而抽象某个方法.\
+" as n1
+
+
+note "Animal 抽象类:\n\
+其他没有抽象的成员变量和成员函数都会被派生类(Cat和Dog)继承, \n\
+而makeSound()方法是抽象方法, 正常情况下需要派生类各自去做自己的实现. \n\
+还有另外一种特殊的情况就是, 抽象类提供了一个默认的makeSound()版本的实现, \n\
+让派生类根据自己的情况来斟酌, 如果符合自己的需要, 就不用再重复做实现.\
+" as n2
+
+Animal .left. n2
+
+@enduml

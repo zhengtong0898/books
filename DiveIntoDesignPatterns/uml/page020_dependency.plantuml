@@ -1,0 +1,23 @@
+@startuml "依赖: 虚线+箭头"
+
+class Professor {
+
+	+ teach(Course c)
+}
+
+
+class Course {}
+
+Professor ..> Course: 依赖
+
+
+note "备注: \n\
+依赖是四种关系中最简单的一种, \n\
+    1. 在类方法的形式参数中声明的对象, \n\
+    2. 在类方法中调用外部对象, \n\
+被称为依赖, 这种关系是短暂的, \n\
+只在方法执行开始到结束过程中存在. \
+" as n1
+
+
+@enduml

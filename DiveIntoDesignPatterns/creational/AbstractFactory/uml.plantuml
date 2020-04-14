@@ -1,0 +1,61 @@
+@startuml
+
+class ProductA {}
+
+class ProductB {}
+
+
+class ConcreteProductA1 {}
+
+
+class ConcreteProductB1 {}
+
+
+class ConcreteProductA2 {}
+
+
+class ConcreteProductB2 {}
+
+
+interface AbstractFactory << interface >> {
+	+ ProductA createProductA()
+	+ ProductB createProductB()
+}
+
+
+class ConcreteFactory1 {
+	+ ProductA createProductA()
+	+ ProductB createProductB()
+}
+
+
+class ConcreteFactory2 {
+	+ ProductA createProductA()
+	+ ProductB createProductB()
+}
+
+
+class Client {
+	- AbstractFactory factory
+	
+	+ Client(AbstractFactory af)
+	+ someOperation()
+}
+
+
+ProductA <|-up- ConcreteProductA1: "继承"
+ProductA <|-down- ConcreteProductA2: "继承"
+ProductB <|-up- ConcreteProductB1: "继承"
+ProductB <|-down- ConcreteProductB2: "继承"
+
+ConcreteProductA1 <.left. ConcreteFactory1: "依赖"
+ConcreteProductB1 <.left. ConcreteFactory1: "依赖"
+ConcreteProductA2 <.left. ConcreteFactory2: "依赖"
+ConcreteProductB2 <.left. ConcreteFactory2: "依赖"
+
+AbstractFactory <|.up. ConcreteFactory1: "接口"
+AbstractFactory <|.down. ConcreteFactory2: "接口"
+
+AbstractFactory <|-left-o Client: "聚合"
+
+@enduml

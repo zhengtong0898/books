@@ -1,6 +1,0 @@
-@startuml "聚合"
-class 院系 {}
-class 教授 {}
-
-院系 o-right-> 教授: "聚合"
-@enduml
