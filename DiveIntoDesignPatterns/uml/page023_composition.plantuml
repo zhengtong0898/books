@@ -1,0 +1,45 @@
+@startuml "组合: 实心菱形+实线+箭头: 一对一/一对多"
+
+
+class Department {}
+
+
+class Major {}
+
+
+class University {
+	- Department department;
+	- std::vector<Major> majors;
+
+}
+
+
+note "IsPartOf:\n\
+Department/Major 是 University 的一部分.\
+" as n1
+
+
+note "Lifecycle:\n\
+类(University)的组合对象(Department/Major)的实例化由内部完成.\n\
+类(University)的退出时将会销毁组合对象(Department/Major)实例.\
+" as n2
+
+
+note "Uniderection:\n\
+组合仅支持单向关联. \
+" as n3
+
+
+note "Composition(组合)与Aggregation(聚合)的区别:\n\
+类负责组合对象的生命周期, 聚合不负责.\
+" as n4
+
+University .up. n3
+University .up. n2
+University .up. n1
+University .left. n4
+University "one" *-right-> "one" Department: "        组合        "
+University "one" *-down-> "many" Major: "        组合        "
+
+
+@enduml

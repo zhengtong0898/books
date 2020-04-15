@@ -1,0 +1,85 @@
+@startuml "组合: 实心菱形+实线+箭头: 一对一/一对多"
+
+class Course {}
+
+
+class Student {
+	+ learning(Course c)
+}
+
+
+class Professor {
+	- Student & student
+}
+
+
+class Department {
+	- Professor & professor
+}
+
+
+class Major {}
+
+
+class University {
+	- Department department;
+	- std::vector<Major> majors;
+
+}
+
+
+note "Composition:\n\
+学校里面有一个院系: Composition,\n\
+\n\
+学校跟院系的关系是隶属(整体/部分)关系, \n\
+学校倒闭后院系也不可能存在, 所以 \n\
+类负责管理Composition对象的实例化和销毁. \n\
+" as n1
+
+
+note "Aggregation: \n\
+院系里面有一个教授\n\
+\n\
+院系跟教授的关系是隶属(整体/部分)关系, \n\
+学校倒闭后虽然院系不存在了, 但是教授仍然存在, \n\
+因此院系类不负责实例化教授类和销毁教授类, \n\
+这表明教授类必须在院系类外部实例化. \
+" as n2
+
+
+note "Association: \n\
+教授教学生\n\
+\n\
+教授跟学生的关系是弱关系, 它们一半通过课程来进行交互. \n\
+教授跟学生的关系可以是单向一对一: 一个教授教一个学生. \n\
+教授跟学生的关系可以是单向一对多: 一个教授教一组学生. \n\
+教授跟学生的关系可以是双向一对一: 一个教授教一个学生, 一个学生只上一个教授的课. \n\
+教授跟学生的关系可以是双向一对多: 一个教授教一组学生, 一个学生能上多个教授的课. \n\
+教授跟学生的关系可以是自我关联(多对多): 由第三方类来管理教授跟学生的关系. \
+" as n3
+
+
+note "Dependency: \n\
+学生依赖课程来获取知识\n\
+\n\
+依赖是四种关系中最简单的一种, \n\
+    1. 在类方法的形式参数中声明的对象, \n\
+    2. 在类方法中调用外部对象, \n\
+被称为依赖, 这种关系是短暂的, \n\
+只在方法执行开始到结束过程中存在. \
+" as n4
+
+
+University "one" *-right-> "one" Department: "        组合        "
+University "one" *-down-> "many" Major: "        组合        "
+Department "one" o-down-> "one" Professor: "       聚合       "
+Professor "one" -down-> "one" Student: "        关联        "
+Student .left.> Course: "        依赖        "
+
+
+University .up. n1
+Department .up. n2
+Professor .right. n3
+Student .right. n4
+
+@enduml

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -166,8 +166,12 @@
     <None Include="uml\page021_association_1.plantuml" />
     <None Include="uml\page021_association_2.plantuml" />
     <None Include="uml\page021_association_3.plantuml" />
-    <None Include="uml\page022_aggregate.plantuml" />
-    <None Include="uml\page023_composition.plantuml" />
+    <None Include="uml\page021_association_4.plantuml" />
+    <None Include="uml\page021_association_5.plantuml" />
+    <None Include="uml\page022_aggregate_1.plantuml" />
+    <None Include="uml\page022_aggregate_2.plantuml" />
+    <None Include="uml\page023_composition_1.plantuml" />
+    <None Include="uml\page023_composition_2.plantuml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
