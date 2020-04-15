@@ -4,107 +4,78 @@
     <Filter Include="uml">
       <UniqueIdentifier>{8b4f8c9d-58f7-4cbc-a8ed-63fc2469acfa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="page">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="confirm">
+    <Filter Include="todo">
       <UniqueIdentifier>{4d774994-5e72-46f5-b390-51d006b5c998}</UniqueIdentifier>
     </Filter>
-    <Filter Include="page\creational">
-      <UniqueIdentifier>{2957536b-1fb0-4184-b399-323be2c2475b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="page\structural">
+    <Filter Include="structural">
       <UniqueIdentifier>{b7c5eaa0-10f7-4a74-8926-53dec7320ce6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="page\behavioral">
-      <UniqueIdentifier>{7ade287b-4f7f-4fd3-9f84-f47231ed92c2}</UniqueIdentifier>
+    <Filter Include="creational">
+      <UniqueIdentifier>{2957536b-1fb0-4184-b399-323be2c2475b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="page\creational\FactoryMethod">
+    <Filter Include="creational\FactoryMethod">
       <UniqueIdentifier>{7d93b614-2c10-4b02-85a6-f20c3428e943}</UniqueIdentifier>
     </Filter>
-    <Filter Include="page\creational\AbstractFactory">
+    <Filter Include="creational\AbstractFactory">
       <UniqueIdentifier>{f13c5213-41bd-48e3-a9c4-8310b41eb40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behavioral">
+      <UniqueIdentifier>{7ade287b-4f7f-4fd3-9f84-f47231ed92c2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="page\006.txt">
-      <Filter>page</Filter>
-    </Text>
-    <Text Include="page\008.txt">
-      <Filter>page</Filter>
-    </Text>
-    <Text Include="uml\README.txt">
-      <Filter>uml</Filter>
-    </Text>
-    <Text Include="todo.txt" />
-    <Text Include="page\013-019.txt">
-      <Filter>page</Filter>
-    </Text>
-    <Text Include="page\020-025.txt">
-      <Filter>page</Filter>
-    </Text>
     <Text Include="README.md" />
-    <Text Include="page\037-069.txt">
-      <Filter>page</Filter>
+    <Text Include="uml\README.md">
+      <Filter>uml</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="confirm\015.cpp">
-      <Filter>confirm</Filter>
+    <ClCompile Include="todo\page015_protected.cpp">
+      <Filter>todo</Filter>
     </ClCompile>
-    <ClCompile Include="page\creational\FactoryMethod\main.cpp">
-      <Filter>page\creational\FactoryMethod</Filter>
+    <ClCompile Include="creational\FactoryMethod\main.cpp">
+      <Filter>creational\FactoryMethod</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="uml\008.plantuml">
+    <None Include="uml\page008_class.plantuml">
       <Filter>uml</Filter>
     </None>
-    <None Include="uml\011.plantuml">
+    <None Include="uml\page011_inherit.plantuml">
       <Filter>uml</Filter>
     </None>
-    <None Include="uml\012.plantuml">
+    <None Include="uml\page016_interface.plantuml">
       <Filter>uml</Filter>
     </None>
-    <None Include="uml\014.plantuml">
+    <None Include="uml\page018_abstract_class.plantuml">
       <Filter>uml</Filter>
     </None>
-    <None Include="uml\016.plantuml">
+    <None Include="uml\page020_dependency.plantuml">
       <Filter>uml</Filter>
     </None>
-    <None Include="uml\017.plantuml">
+    <None Include="uml\page022_aggregate.plantuml">
       <Filter>uml</Filter>
     </None>
-    <None Include="uml\018.plantuml">
+    <None Include="uml\page023_composition.plantuml">
       <Filter>uml</Filter>
     </None>
-    <None Include="uml\020.plantuml">
+    <None Include="creational\README.md">
+      <Filter>creational</Filter>
+    </None>
+    <None Include="creational\AbstractFactory\uml.plantuml">
+      <Filter>creational\AbstractFactory</Filter>
+    </None>
+    <None Include="creational\FactoryMethod\uml.plantuml">
+      <Filter>creational\FactoryMethod</Filter>
+    </None>
+    <None Include="uml\page021_association_1.plantuml">
       <Filter>uml</Filter>
     </None>
-    <None Include="uml\021.plantuml">
+    <None Include="uml\page021_association_2.plantuml">
       <Filter>uml</Filter>
     </None>
-    <None Include="uml\022.plantuml">
+    <None Include="uml\page021_association_3.plantuml">
       <Filter>uml</Filter>
-    </None>
-    <None Include="uml\023.plantuml">
-      <Filter>uml</Filter>
-    </None>
-    <None Include="uml\041.plantuml">
-      <Filter>uml</Filter>
-    </None>
-    <None Include="uml\050.plantuml">
-      <Filter>uml</Filter>
-    </None>
-    <None Include="page\creational\README.md">
-      <Filter>page\creational</Filter>
-    </None>
-    <None Include="page\creational\FactoryMethod\uml.plantuml">
-      <Filter>page\creational\FactoryMethod</Filter>
-    </None>
-    <None Include="page\creational\AbstractFactory\uml.plantuml">
-      <Filter>page\creational\AbstractFactory</Filter>
     </None>
   </ItemGroup>
 </Project>

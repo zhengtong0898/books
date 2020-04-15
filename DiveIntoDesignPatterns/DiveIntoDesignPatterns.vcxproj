@@ -147,36 +147,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="confirm\015.cpp" />
-    <ClCompile Include="page\creational\FactoryMethod\main.cpp" />
+    <ClCompile Include="creational\FactoryMethod\main.cpp" />
+    <ClCompile Include="todo\page015_protected.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="page\006.txt" />
-    <Text Include="page\008.txt" />
-    <Text Include="page\013-019.txt" />
-    <Text Include="page\020-025.txt" />
-    <Text Include="page\037-069.txt" />
     <Text Include="README.md" />
-    <Text Include="todo.txt" />
-    <Text Include="uml\README.txt" />
+    <Text Include="uml\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="page\creational\AbstractFactory\uml.plantuml" />
-    <None Include="page\creational\FactoryMethod\uml.plantuml" />
-    <None Include="page\creational\README.md" />
-    <None Include="uml\008.plantuml" />
-    <None Include="uml\011.plantuml" />
-    <None Include="uml\012.plantuml" />
-    <None Include="uml\014.plantuml" />
-    <None Include="uml\016.plantuml" />
-    <None Include="uml\017.plantuml" />
-    <None Include="uml\018.plantuml" />
-    <None Include="uml\020.plantuml" />
-    <None Include="uml\021.plantuml" />
-    <None Include="uml\022.plantuml" />
-    <None Include="uml\023.plantuml" />
-    <None Include="uml\041.plantuml" />
-    <None Include="uml\050.plantuml" />
+    <None Include="creational\AbstractFactory\uml.plantuml" />
+    <None Include="creational\FactoryMethod\uml.plantuml" />
+    <None Include="creational\README.md" />
+    <None Include="uml\page008_class.plantuml" />
+    <None Include="uml\page011_inherit.plantuml" />
+    <None Include="uml\page016_interface.plantuml" />
+    <None Include="uml\page018_abstract_class.plantuml" />
+    <None Include="uml\page020_dependency.plantuml" />
+    <None Include="uml\page021_association_1.plantuml" />
+    <None Include="uml\page021_association_2.plantuml" />
+    <None Include="uml\page021_association_3.plantuml" />
+    <None Include="uml\page022_aggregate.plantuml" />
+    <None Include="uml\page023_composition.plantuml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

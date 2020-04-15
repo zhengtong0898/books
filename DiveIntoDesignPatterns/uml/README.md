@@ -14,3 +14,9 @@
 > page-18: 抽象类和抽象方法的名称用斜体来显式.   
 > page-22: 空心菱形和实线表示聚合: TODO:暂时无法清楚描述.    
 > page-23: 失信菱形和实线表示组合:    
+
+
+### 参考资料
+> https://www.guru99.com/association-aggregation-composition-difference.html   
+> [Assocication](https://www.learncpp.com/cpp-tutorial/10-4-association/)
+> https://www.youtube.com/watch?v=75EFGTP0FVc

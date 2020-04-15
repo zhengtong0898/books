@@ -1,6 +1,0 @@
-@startuml "聚合: 空心菱形+实线+箭头"
-class Department {}
-class Professor {}
-
-Department o-right-> Professor: "聚合"
-@enduml

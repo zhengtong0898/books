@@ -1,6 +1,0 @@
-@startuml "组合: 实心菱形+实线+箭头"
-class 大学 {}
-class 院系 {}
-
-大学 *-right-> 院系: "组合"
-@enduml
