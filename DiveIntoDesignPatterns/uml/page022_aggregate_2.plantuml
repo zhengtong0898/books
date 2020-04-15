@@ -1,0 +1,45 @@
+@startuml "聚合: 空心菱形+实线+箭头: 一对多"
+
+
+class Professor {}
+
+
+class Assistant {}
+
+
+class Department {
+	- std::vector<std::reference_wrapper<Professor>> & professors
+	- std::vector<std::reference_wrapper<Assistant>> & assistants
+}
+
+
+note "IsPartOf: \n\
+Professor is part of Department. \n\
+教授和院系(部门)是一个隶属层级关系, \n\
+所以教授是院系的一部分.\
+" as n1
+
+note "LifeCycle: \n\
+类(Professor)的聚合对象(student)的实例化由外部完成.\n\
+类(Professor)的退出并不会销毁关联对象(student)实例.\
+" as n2
+
+note "Uniderection:\n\
+聚合仅支持单向关联. \
+" as n3
+
+
+note "Aggregation(聚合)与Association(关联)的区别: \n\
+1. 聚合是 part-whole 关系, 而关联不是. \n\
+2. 聚合仅 单向 关联, 而关联除了单向还支持双向(甚至还有多对多). \n\
+3. 聚合可以由多个part, 而关联只能由一个关联对象. \
+" as n4
+
+Department .up. n3
+Department .up. n2
+Department .up. n1
+Department .down. n4
+Department "one" o-left-> "many" Professor: "        聚合        "
+Department "one" o-right-> "many" Assistant: "        聚合        "
+
+@enduml
