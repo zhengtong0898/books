@@ -1,0 +1,47 @@
+@startuml "关联: 实线+箭头; 双向一对多"
+
+
+class Student {
+	- std::vector<std::reference_wrapper<Professor>> professors;
+	+ remember()
+}
+
+
+class Professor {
+	- std::vector<std::reference_wrapper<Student>> students;
+
+	+ Professor() {}
+	+ add_student(Student & s);
+	+ teach()
+}
+
+
+
+
+
+note "Assocication的几种关系表述: \n\
+单向关联(一对一、一对多). \n\
+双向关联(一对一、<b><color:red>一对多</color></b>). \n\
+自我关联(多对多). \
+" as n1
+
+
+note "Association\n\
+1. 类(Professor)的关联对象(student)的实例化由外部完成.\n\
+2. 类(Professor)的退出并不会销毁关联对象(student)实例.\
+" as n2
+
+
+note "备注:\n\
+除非必要, 否则不推荐使用双向关系.\
+" as n3
+
+
+Professor .up. n2
+Professor .left. n1
+Professor .right. n3
+Professor "one" -down-> "many" Student
+Professor "many" <-up- "one" Student: "            双向关联"
+
+
+@enduml

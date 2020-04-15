@@ -1,0 +1,43 @@
+@startuml "关联: 实线+箭头; 双向一对一"
+
+
+class Student {
+	- Professor rofessor;
+
+	+ void remember()
+}
+
+
+class Professor {
+	- Student student;
+
+	+ Professor() {}
+	+ void teach()
+}
+
+
+note "Assocication的几种关系表述: \n\
+单向关联(一对一、一对多). \n\
+双向关联(<b><color:red>一对一</color></b>、一对多). \n\
+自我关联(多对多). \
+" as n1
+
+
+note "符合Association关系的条件:\n\
+1. Association 不是 Class 的 part 关系. \n\
+2. Association 的生命周期不归 Class 负责(创建和销毁). \
+" as n2
+
+
+note "备注:\n\
+除非必要, 否则不推荐使用双向关系.\
+" as n3
+
+Professor .up. n2
+Professor .left. n1
+Professor .right. n3
+Professor "one" -down-> "one" Student
+Professor "one" <-up- "one" Student: "双向一对一"
+
+
+@enduml

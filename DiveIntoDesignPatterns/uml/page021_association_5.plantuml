@@ -1,0 +1,44 @@
+@startuml "关联: 实线+箭头; 自我关联(多对多)"
+
+
+class Student {
+	+ void remember()
+}
+
+
+class Professor {
+	+ Professor() {}
+	+ void teach(std::vector<std::std::reference_wrapper<Student>> students)
+}
+
+
+class ProfessorStudent {
+	- Student & student;
+	- Professor & professor
+	- static std::vector<std::std::reference_wrapper<ProfessorStudent>> ps_;
+
+	ProfessorStudent(ProfessorStudent & ps) { ps_.push_back(ps); }
+	+ ProfessorStudent findProfessorStudent()
+}
+
+
+note "Assocication的几种关系表述: \n\
+单向关联(一对一、一对多). \n\
+双向关联(一对一、一对多). \n\
+自我关联(<b><color:red>多对多</color></b>). \
+" as n1
+
+
+note "符合Association关系的条件:\n\
+1. Association 不是 Class 的 part 关系. \n\
+2. Association 的生命周期不归 Class 负责(创建和销毁). \
+" as n2
+
+
+Professor .up. n2
+Professor .left. n1
+Professor -right- Student
+(Professor, Student) .. ProfessorStudent: 自我关联(多对多)
+
+
+@enduml
