@@ -28,6 +28,9 @@
     <Text Include="uml\README.md">
       <Filter>uml</Filter>
     </Text>
+    <Text Include="todo\todo.txt">
+      <Filter>todo</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="todo\page015_protected.cpp">
@@ -35,6 +38,18 @@
     </ClCompile>
     <ClCompile Include="creational\FactoryMethod\main.cpp">
       <Filter>creational\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="creational\FactoryMethod\page074.cpp">
+      <Filter>creational\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page074_1_polymorphic.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page074_2_abstractclass.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page074_3_inherit_ways.cpp">
+      <Filter>todo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -51,12 +66,6 @@
       <Filter>uml</Filter>
     </None>
     <None Include="uml\page020_dependency.plantuml">
-      <Filter>uml</Filter>
-    </None>
-    <None Include="uml\page022_aggregate.plantuml">
-      <Filter>uml</Filter>
-    </None>
-    <None Include="uml\page023_composition.plantuml">
       <Filter>uml</Filter>
     </None>
     <None Include="creational\README.md">
@@ -76,6 +85,30 @@
     </None>
     <None Include="uml\page021_association_3.plantuml">
       <Filter>uml</Filter>
+    </None>
+    <None Include="uml\page021_association_4.plantuml">
+      <Filter>uml</Filter>
+    </None>
+    <None Include="uml\page021_association_5.plantuml">
+      <Filter>uml</Filter>
+    </None>
+    <None Include="uml\page022_aggregate_1.plantuml">
+      <Filter>uml</Filter>
+    </None>
+    <None Include="uml\page022_aggregate_2.plantuml">
+      <Filter>uml</Filter>
+    </None>
+    <None Include="uml\page023_composition.plantuml">
+      <Filter>uml</Filter>
+    </None>
+    <None Include="uml\page023_relationship.plantuml">
+      <Filter>uml</Filter>
+    </None>
+    <None Include="creational\FactoryMethod\page074.plantuml">
+      <Filter>creational\FactoryMethod</Filter>
+    </None>
+    <None Include="creational\FactoryMethod\page074.py">
+      <Filter>creational\FactoryMethod</Filter>
     </None>
   </ItemGroup>
 </Project>

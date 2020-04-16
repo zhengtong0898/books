@@ -1,0 +1,79 @@
+@startuml
+hide empty members
+
+
+class Logistics {
+	...
+	--
+	+ planDelivery()
+	+ {abstract} virtual Transport createTransport();
+}
+
+
+class RoadLogistics {
+	...
+	--
+	+ createTransport()
+}
+
+
+class SeaLogistics {
+	...
+	--
+	+ createTransport()
+}
+
+
+interface Transport << interface >> {
+	+ deliver()
+}
+
+
+class Truck {
+	...
+	--
+	+ deliver()
+}
+
+
+class Ship {
+	...
+	--
+	+ deliver()
+}
+
+
+note "inside planDelivery(): \n\
+Transport transport = this->createTransport(); \
+" as n1
+
+
+note "inside createTransport(): \n\
+return new Truck(); \
+" as n2
+
+
+note "inside createTransport(): \n\
+return new Ship(); \
+" as n3
+
+
+Logistics <|-- RoadLogistics: "继承"
+Logistics <|-- SeaLogistics: "继承"
+Logistics .up. n1
+
+
+RoadLogistics .left. n2
+SeaLogistics .right. n3
+
+
+Transport <|.down. Truck: "接口"
+Transport <|.down. Ship: "接口"
+
+
+Logistics ..> Transport: "依赖"
+RoadLogistics .down.> Truck: "依赖"
+SeaLogistics .down.> Ship: "依赖"
+
+
+@enduml

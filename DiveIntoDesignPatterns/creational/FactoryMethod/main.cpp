@@ -53,7 +53,7 @@ public:
 };
 
 
-int main(void) {
+int main_(void) {
 
     Creator * create_a = new ConcreteCreateA;
     create_a->someOperation();

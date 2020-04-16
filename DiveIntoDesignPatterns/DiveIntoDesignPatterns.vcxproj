@@ -148,14 +148,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="creational\FactoryMethod\main.cpp" />
+    <ClCompile Include="creational\FactoryMethod\page074.cpp" />
     <ClCompile Include="todo\page015_protected.cpp" />
+    <ClCompile Include="todo\page074_2_abstractclass.cpp" />
+    <ClCompile Include="todo\page074_1_polymorphic.cpp" />
+    <ClCompile Include="todo\page074_3_inherit_ways.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
+    <Text Include="todo\todo.txt" />
     <Text Include="uml\README.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="creational\AbstractFactory\uml.plantuml" />
+    <None Include="creational\FactoryMethod\page074.plantuml" />
+    <None Include="creational\FactoryMethod\page074.py" />
     <None Include="creational\FactoryMethod\uml.plantuml" />
     <None Include="creational\README.md" />
     <None Include="uml\page008_class.plantuml" />
@@ -170,8 +177,8 @@
     <None Include="uml\page021_association_5.plantuml" />
     <None Include="uml\page022_aggregate_1.plantuml" />
     <None Include="uml\page022_aggregate_2.plantuml" />
-    <None Include="uml\page023_composition_1.plantuml" />
-    <None Include="uml\page023_composition_2.plantuml" />
+    <None Include="uml\page023_composition.plantuml" />
+    <None Include="uml\page023_relationship.plantuml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
