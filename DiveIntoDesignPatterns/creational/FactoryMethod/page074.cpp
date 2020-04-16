@@ -63,7 +63,7 @@ public:
 int main(void) {
     Logistics * logistics = new RoadLogistics;
     logistics->planDelivery();
-    std::cout << "page075" << std::endl;
+    std::cout << "page074" << std::endl;
 
     return 0;
 }
