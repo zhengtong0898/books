@@ -161,9 +161,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="creational\AbstractFactory\uml.plantuml" />
+    <None Include="creational\FactoryMethod\main.py" />
     <None Include="creational\FactoryMethod\page074.plantuml" />
     <None Include="creational\FactoryMethod\page074.py" />
-    <None Include="creational\FactoryMethod\uml.plantuml" />
+    <None Include="creational\FactoryMethod\main.plantuml" />
     <None Include="creational\README.md" />
     <None Include="uml\page008_class.plantuml" />
     <None Include="uml\page011_inherit.plantuml" />

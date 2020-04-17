@@ -1,75 +1,55 @@
 #include <iostream>
+#include <map>
+#include <string>
+#include <functional>
+#include <memory>
+#include <type_traits>
 
 
-// ¶¨ÒåÁËÒ»¸ö½Ó¿Úºó, ¼Ì³ĞÕâ¸ö½Ó¿ÚµÄÅÉÉúÀà×ÜÊÇÒªÊµÏÖÕâ¸ö½Ó¿Ú
-// Òò´ËÆäËûÀà¶ÔÏóÒÀÀµÕâ¸ö¶ÔÏó»òÕß¹ØÁªÕâ¸öÅÉÉúÀà¶ÔÏóÖ®ºó, Ò»¶¨ÄÜ·ÃÎÊµ½Õâ¸ö·½·¨.
-class Product {
+class Localizer {
 public:
-    virtual void doStuff() = 0;
+    virtual ~Localizer() {}
+    virtual std::string localize(std::string msg) = 0;
 };
 
 
-class ConcreteProductA: public Product {
+class GreekLocalizer: public Localizer {
+private:
+    std::map<std::string, std::string> translations;
 public:
-    void doStuff() {
-        std::cout << "doSuff in ConcreteProductA" << std::endl;
+    GreekLocalizer(): translations{ {"dog", "ÏƒÎºÏÎ»Î¿Ï‚"}, {"cat", "Î³Î¬Ï„Î±"} } {}
+    std::string localize(std::string msg) {
+        auto found = this->translations.find(msg);
+        if (found == this->translations.end()) return msg;
+        return this->translations[msg];
     }
 };
 
 
-class ConcreteProductB : public Product {
+class EnglishLocalizer : public Localizer {
 public:
-    void doStuff() {
-        std::cout << "doSuff in ConcreteProductB" << std::endl;
+    std::string localize(std::string msg) {
+        return msg;
     }
 };
 
 
-
-class Creator {
-public:
-    virtual Product * createProduct() = 0;
-    void someOperation() {
-        Product * product = this->createProduct();
-        product->doStuff();
-        delete product;
-    }
-};
-
-
-class ConcreteCreateA : public Creator {
-public:
-    Product * createProduct() {
-        return new ConcreteProductA;
-    }
-};
-
-
-class ConcreteCreateB : public Creator {
-public:
-    Product* createProduct() {
-        return new ConcreteProductB;
-    }
-};
-
-
-int main_(void) {
-
-    Creator * create_a = new ConcreteCreateA;
-    create_a->someOperation();
-
-    Creator * create_b = new ConcreteCreateB;
-    create_b->someOperation();
-
-    return 0;
+// TODO: ä½¿ç”¨typeidçš„æ–¹å¼æ¥å†™è¿™ä¸ªå‡½æ•°.
+std::shared_ptr<Localizer> get_localizer(std::string key) {
+    static std::map<std::string, std::function<std::shared_ptr<Localizer>()>> localizer{
+        {"Greek",   []() -> std::shared_ptr<Localizer> { return std::shared_ptr<Localizer>(new GreekLocalizer);   } },
+        {"English", []() -> std::shared_ptr<Localizer> { return std::shared_ptr<Localizer>(new EnglishLocalizer); } }
+    };
+    return localizer[key]();
 }
 
 
-// ±¸×¢:
-// Õâ¸ö°¸ÀıÓĞÒ»¸öÇ±ÔÚµÄÎÊÌâ, ¾ÍÊÇÃ¿´Îµ÷ÓÃsomeOperation
-// ¶¼»ánewÒ»¸öProduct¶ÔÏó, È»ºóÖ´ĞĞÒ»Ğ©´úÂëºóÓÖ½«ÆäÉ¾³ı,
-// ÕâÖÖ½»»¥±»³ÆÎªÒ»ÖÖ¹ØÏµ: ÒÀÀµ.
-// 
-// Èç¹û product ±¾ÉíºÜÖØ, ²¢ÇÒ someOperation »á±»µ÷ÓÃ¶à´ÎÊ±
-// ¾Í»áÏÔµÃºÜ±¿ÖØ, ÕâÊ±¿ÉÄÜ¾ÍÓ¦¸ÃÔÚCreatorÀàÖĞ´´½¨Ò»¸ö³ÉÔ±±äÁ¿, 
-// ½¨Á¢CreatorÓÚProductµÄ¹ØÏµ: ¹ØÁª.
+int test_Localizer(void) {
+
+    std::cout << typeid("GreekLocalizer").name() << std::endl;
+
+    std::cout << get_localizer("Greek")->localize("dog") << std::endl;
+    std::cout << get_localizer("English")->localize("dog") << std::endl;
+    std::cout << "main" << std::endl;
+    return 0;
+}

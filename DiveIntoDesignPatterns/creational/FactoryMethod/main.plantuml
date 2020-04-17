@@ -1,0 +1,40 @@
+@startuml
+
+
+interface Localizer << 产品接口 >> {
+	...
+	--
+	+ virtual ~Localizer() {}
+	+ virtual std::string localize(std::string msg) = 0;
+}
+
+
+class GreekLocalizer << 具体产品 >> {
+	- std::map<std::string, std::string> translations;
+
+	+ GreekLocalizer(): translations {{"dog", "σκύλος"}, {"cat", "γάτα"}} {}
+	+ std::string localize(std::string msg);
+}
+
+
+class EnglishLocalizer << 具体产品 >> {
+	...
+	--
+	+ std::string localize(std::string msg);
+}
+
+
+class Creator << 工厂方法 >> {
+	- std::map<std::string, std::function<std::shared_ptr<Localizer>()>> localizer;
+	--
+	+ std::shared_ptr<Localizer> get_localizer();
+}
+
+
+Localizer <|.. GreekLocalizer: "接口实现(继承)"
+Localizer <|.. EnglishLocalizer: "接口实现(继承)"
+
+Creator "one" -right-> "many" Localizer: "                单向关联                "
+
+
+@enduml
