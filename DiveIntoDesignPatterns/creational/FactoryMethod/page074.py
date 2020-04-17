@@ -35,19 +35,19 @@ class Logistics(object):
         transport = self.createTransport()
         transport.deliver()
 
-    def createTransport(self):
+    def createTransport(self) -> Transport:
         raise NotImplementedError
 
 
 class RoadLogistics(Logistics):
 
-    def createTransport(self):
+    def createTransport(self) -> Transport:
         return Truck()
 
 
 class SeaLogistics(Logistics):
 
-    def createTransport(self):
+    def createTransport(self) -> Transport:
         return Ship()
 
 

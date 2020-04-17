@@ -60,7 +60,7 @@ public:
 };
 
 
-int main(void) {
+int test_page074(void) {
     Logistics * logistics = new RoadLogistics;
     logistics->planDelivery();
     std::cout << "page074" << std::endl;
