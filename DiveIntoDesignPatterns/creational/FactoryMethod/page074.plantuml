@@ -2,7 +2,7 @@
 hide empty members
 
 
-class Logistics {
+abstract class Logistics {
 	...
 	--
 	+ planDelivery()
