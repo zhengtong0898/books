@@ -71,9 +71,9 @@ Transport <|.down. Truck: "接口"
 Transport <|.down. Ship: "接口"
 
 
-Logistics ..> Transport: "依赖"
-RoadLogistics .down.> Truck: "依赖"
-SeaLogistics .down.> Ship: "依赖"
+Logistics ..> Transport
+RoadLogistics .down.> Truck
+SeaLogistics .down.> Ship
 
 
 @enduml
