@@ -35,10 +35,11 @@ public:
 
 
 // TODO: 使用typeid的方式来写这个函数.
-std::shared_ptr<Localizer> get_localizer(std::string key) {
-    static std::map<std::string, std::function<std::shared_ptr<Localizer>()>> localizer{
-        {"Greek",   []() -> std::shared_ptr<Localizer> { return std::shared_ptr<Localizer>(new GreekLocalizer);   } },
-        {"English", []() -> std::shared_ptr<Localizer> { return std::shared_ptr<Localizer>(new EnglishLocalizer); } }
+typedef std::shared_ptr<Localizer> LP;
+LP get_localizer(std::string key) {
+    static std::map<std::string, std::function<LP()>> localizer{
+        {"Greek",   []() -> LP { return LP(new GreekLocalizer);   } },
+        {"English", []() -> LP { return LP(new EnglishLocalizer); } }
     };
     return localizer[key]();
 }
@@ -46,10 +47,9 @@ std::shared_ptr<Localizer> get_localizer(std::string key) {
 
 int test_Localizer(void) {
 
-    std::cout << typeid("GreekLocalizer").name() << std::endl;
-
     std::cout << get_localizer("Greek")->localize("dog") << std::endl;
     std::cout << get_localizer("English")->localize("dog") << std::endl;
     std::cout << "main" << std::endl;
+
     return 0;
 }
