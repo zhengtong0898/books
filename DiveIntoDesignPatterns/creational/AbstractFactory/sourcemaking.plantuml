@@ -1,0 +1,89 @@
+@startuml
+hide empty members
+
+
+abstract class Widget {
+	...
+	--
+	+ virtual void draw() = 0;
+}
+
+
+class LinuxButton {
+	...
+	--
+	+ void draw();
+}
+
+
+class LinuxMenu {
+	...
+	--
+	+ void draw();
+}
+
+
+class WindowsButton {
+	...
+	--
+	+ void draw();
+}
+
+
+class WindowsMenu {
+	...
+	--
+	+ void draw();
+}
+
+
+interface Factory {
+	+ virtual ~Factory() {}
+	+ virtual Widget * create_button() = 0;
+	+ virtual Widget * create_menu() = 0;
+}
+
+
+class LinuxFactory {
+	...
+	--
+	+ Widget * create_button();
+	+ Widget * create_menu();
+}
+
+
+class WindowsFactory {
+	...
+	--
+	+ Widget * create_button();
+	+ Widget * create_menu();
+}
+
+
+class Client {
+	- Factory * factory;
+
+	+ Client(Factory * f): factory(f) {}
+	+ void draw();
+	+ display_window_one();
+	+ display_window_two();
+}
+
+
+Factory <|.up. LinuxFactory
+Factory <|.down. WindowsFactory
+Factory "one" <-left-o "one" Client: "        聚合        "
+
+
+Widget <|-up- LinuxButton
+Widget <|-up- LinuxMenu
+Widget <|-down- WindowsButton
+Widget <|-down- WindowsMenu
+
+LinuxButton <.left. LinuxFactory
+LinuxMenu <.left. LinuxFactory 
+WindowsButton <.left. WindowsFactory
+WindowsMenu <.left. WindowsFactory
+
+
+@enduml

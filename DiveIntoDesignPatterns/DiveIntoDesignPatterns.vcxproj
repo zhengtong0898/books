@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="creational\AbstractFactory\sourcemaking.cpp" />
     <ClCompile Include="creational\FactoryMethod\main.cpp" />
     <ClCompile Include="creational\FactoryMethod\page074.cpp" />
     <ClCompile Include="todo\page015_protected.cpp" />
@@ -160,7 +161,8 @@
     <Text Include="uml\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="creational\AbstractFactory\uml.plantuml" />
+    <None Include="creational\AbstractFactory\sourcemaking.plantuml" />
+    <None Include="creational\AbstractFactory\sourcemaking.py" />
     <None Include="creational\FactoryMethod\main.py" />
     <None Include="creational\FactoryMethod\page074.plantuml" />
     <None Include="creational\FactoryMethod\page074.py" />

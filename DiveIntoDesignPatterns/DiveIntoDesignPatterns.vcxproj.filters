@@ -51,6 +51,9 @@
     <ClCompile Include="todo\page074_3_inherit_ways.cpp">
       <Filter>todo</Filter>
     </ClCompile>
+    <ClCompile Include="creational\AbstractFactory\sourcemaking.cpp">
+      <Filter>creational\AbstractFactory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="uml\page008_class.plantuml">
@@ -70,9 +73,6 @@
     </None>
     <None Include="creational\README.md">
       <Filter>creational</Filter>
-    </None>
-    <None Include="creational\AbstractFactory\uml.plantuml">
-      <Filter>creational\AbstractFactory</Filter>
     </None>
     <None Include="uml\page021_association_1.plantuml">
       <Filter>uml</Filter>
@@ -112,6 +112,12 @@
     </None>
     <None Include="creational\FactoryMethod\main.py">
       <Filter>creational\FactoryMethod</Filter>
+    </None>
+    <None Include="creational\AbstractFactory\sourcemaking.py">
+      <Filter>creational\AbstractFactory</Filter>
+    </None>
+    <None Include="creational\AbstractFactory\sourcemaking.plantuml">
+      <Filter>creational\AbstractFactory</Filter>
     </None>
   </ItemGroup>
 </Project>
