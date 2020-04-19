@@ -125,7 +125,7 @@ public:
  * pick and create a proper factory. Usually that's
  * happening somewhere in program initialization code.
  */
-int main() {
+int test_abstract_factory_widget() {
     Factory* factory;
 #ifdef LINUX
     factory = new LinuxFactory;
@@ -135,4 +135,6 @@ int main() {
 
     Client* c = new Client(factory);
     c->draw();
+
+    return 0;
 }
