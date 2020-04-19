@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 /******************************************************************************
 *
 * 问题: 一个抽象类是否可以定义一个抽象函数, 由派生来通过覆盖实现时返回不同类型?
@@ -21,6 +22,9 @@ public:
 
 class Small109 : public Interface109 {
 public:
+    void set_small_foo() {
+        std::cout << "set small 109 foo" << std::endl;
+    }
     void set_foo() {
         std::cout << "Small109 foo" << std::endl;
     }
@@ -29,6 +33,9 @@ public:
 
 class Big109 : public Interface109 {
 public:
+    void set_bigfoo() {
+        std::cout << "set big 109 foo" << std::endl;
+    }
     void set_foo() {
         std::cout << "Big109 foo" << std::endl;
     }
@@ -37,6 +44,7 @@ public:
 
 class AbstractClass109 {
 public:
+    virtual ~AbstractClass109() {}
     virtual Interface109 * get_result() = 0;
 };
 
@@ -58,9 +66,14 @@ public:
 
 
 
-int main(void) {
+int test_return_difftype109(void) {
 
-    new SmallDerivedClass109;
+    AbstractClass109 * ac = new SmallDerivedClass109;
+    Interface109 * is109 = ac->get_result();
+    Small109 * s109 = dynamic_cast<Small109*>(is109);
+    s109->set_foo();
+    s109->set_small_foo();
+
 
     std::cout << "return difftype" << std::endl;
 
