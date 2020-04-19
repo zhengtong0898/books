@@ -60,6 +60,8 @@ public:
 
 int main(void) {
 
+    new SmallDerivedClass109;
+
     std::cout << "return difftype" << std::endl;
 
     return 0;
