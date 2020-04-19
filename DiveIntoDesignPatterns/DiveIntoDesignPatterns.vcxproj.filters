@@ -22,6 +22,9 @@
     <Filter Include="behavioral">
       <UniqueIdentifier>{7ade287b-4f7f-4fd3-9f84-f47231ed92c2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="creational\Builder">
+      <UniqueIdentifier>{8c3de695-b556-4889-bd23-45bb8b0f89c9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -53,6 +56,12 @@
     </ClCompile>
     <ClCompile Include="creational\AbstractFactory\sourcemaking.cpp">
       <Filter>creational\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="creational\Builder\main.cpp">
+      <Filter>creational\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page109_return_difftype.cpp">
+      <Filter>todo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +127,15 @@
     </None>
     <None Include="creational\AbstractFactory\sourcemaking.plantuml">
       <Filter>creational\AbstractFactory</Filter>
+    </None>
+    <None Include="creational\Builder\python-patterns.py">
+      <Filter>creational\Builder</Filter>
+    </None>
+    <None Include="creational\Builder\main.plantuml">
+      <Filter>creational\Builder</Filter>
+    </None>
+    <None Include="creational\Builder\main.py">
+      <Filter>creational\Builder</Filter>
     </None>
   </ItemGroup>
 </Project>

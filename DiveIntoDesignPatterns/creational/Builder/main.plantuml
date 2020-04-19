@@ -1,0 +1,65 @@
+@startuml
+hide empty members
+
+
+class Car {}
+
+
+class Manual {}
+
+
+interface Builder << interface >> {
+	+ reset()
+	+ void set_seats(std::string number)
+	+ void set_engine(std::string engine)
+	+ void set_trip_computer()
+	+ void set_gps()
+}
+
+
+class CarBuilder << concrete builder >> {
+	- Car & car
+
+	+ reset()
+	+ void set_seats(std::string number)
+	+ void set_engine(std::string engine)
+	+ void set_trip_computer()
+	+ void set_gps()
+	+ Car get_result()
+}
+
+
+class CarManualBuilder << concrete builder >> {
+	- Manual & manual
+
+	+ reset()
+	+ void set_seats(std::string number)
+	+ void set_engine(std::string engine)
+	+ void set_trip_computer()
+	+ void set_gps()
+	+ Manual get_result()
+}
+
+
+class Director {
+	- Builder & builder
+
+	+ reset(Builder & builder)
+	+ makeSUV()
+	+ makeSportsCar()
+}
+
+
+CarBuilder "one" --> "one" Car
+CarManualBuilder "one" --> "one" Manual
+
+Builder <|.down. CarBuilder
+Builder <|.down. CarManualBuilder
+Builder "one" <-left-o "one" Director: "            聚合            "
+
+
+
+
+
+
+@enduml
