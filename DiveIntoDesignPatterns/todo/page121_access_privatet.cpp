@@ -24,7 +24,7 @@ public:
 };
 
 
-int main(void) {
+int test_Person121(void) {
 
     Person121 a("zhangsan");
     Person121 b("lisi");

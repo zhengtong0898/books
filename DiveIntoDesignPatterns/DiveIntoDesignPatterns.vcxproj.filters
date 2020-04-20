@@ -25,6 +25,9 @@
     <Filter Include="creational\Builder">
       <UniqueIdentifier>{8c3de695-b556-4889-bd23-45bb8b0f89c9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="creational\Prototype">
+      <UniqueIdentifier>{ead156ce-b526-4323-a24a-c7c83d9b4113}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -57,11 +60,14 @@
     <ClCompile Include="creational\AbstractFactory\sourcemaking.cpp">
       <Filter>creational\AbstractFactory</Filter>
     </ClCompile>
-    <ClCompile Include="creational\Builder\main.cpp">
-      <Filter>creational\Builder</Filter>
-    </ClCompile>
     <ClCompile Include="todo\page109_return_difftype.cpp">
       <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page121_access_privatet.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="creational\Prototype\sourcemaking.cpp">
+      <Filter>creational\Prototype</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -134,8 +140,8 @@
     <None Include="creational\Builder\main.plantuml">
       <Filter>creational\Builder</Filter>
     </None>
-    <None Include="creational\Builder\main.py">
-      <Filter>creational\Builder</Filter>
+    <None Include="creational\Prototype\sourcemakeing.py">
+      <Filter>creational\Prototype</Filter>
     </None>
   </ItemGroup>
 </Project>
