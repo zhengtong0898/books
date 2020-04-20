@@ -31,6 +31,9 @@
     <Filter Include="creational\Singleton">
       <UniqueIdentifier>{62d092f8-f418-4499-af71-c9194142c264}</UniqueIdentifier>
     </Filter>
+    <Filter Include="creational\Pool">
+      <UniqueIdentifier>{ddf64447-6754-43dd-ba3c-c2c8516a72bf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -77,6 +80,9 @@
     </ClCompile>
     <ClCompile Include="creational\Singleton\main.cpp">
       <Filter>creational\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="creational\Pool\main.cpp">
+      <Filter>creational\Pool</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -155,5 +161,19 @@
     <None Include="creational\Singleton\main.py">
       <Filter>creational\Singleton</Filter>
     </None>
+    <None Include="creational\Pool\main.py">
+      <Filter>creational\Pool</Filter>
+    </None>
+    <None Include="creational\Pool\python-patterns.py">
+      <Filter>creational\Pool</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="creational\Pool\mysql_connector.h">
+      <Filter>creational\Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="creational\Pool\mysql_pool.h">
+      <Filter>creational\Pool</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
