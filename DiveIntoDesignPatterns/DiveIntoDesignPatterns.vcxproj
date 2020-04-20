@@ -151,12 +151,14 @@
     <ClCompile Include="creational\FactoryMethod\main.cpp" />
     <ClCompile Include="creational\FactoryMethod\page074.cpp" />
     <ClCompile Include="creational\Prototype\sourcemaking.cpp" />
+    <ClCompile Include="creational\Singleton\main.cpp" />
     <ClCompile Include="todo\page015_protected.cpp" />
     <ClCompile Include="todo\page074_2_abstractclass.cpp" />
     <ClCompile Include="todo\page074_1_polymorphic.cpp" />
     <ClCompile Include="todo\page074_3_inherit_ways.cpp" />
     <ClCompile Include="todo\page109_return_difftype.cpp" />
     <ClCompile Include="todo\page121_access_privatet.cpp" />
+    <ClCompile Include="todo\page136_method_suffix.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -174,6 +176,7 @@
     <None Include="creational\FactoryMethod\main.plantuml" />
     <None Include="creational\Prototype\sourcemakeing.py" />
     <None Include="creational\README.md" />
+    <None Include="creational\Singleton\main.py" />
     <None Include="uml\page008_class.plantuml" />
     <None Include="uml\page011_inherit.plantuml" />
     <None Include="uml\page016_interface.plantuml" />

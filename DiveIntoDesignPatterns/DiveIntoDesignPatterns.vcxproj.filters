@@ -28,6 +28,9 @@
     <Filter Include="creational\Prototype">
       <UniqueIdentifier>{ead156ce-b526-4323-a24a-c7c83d9b4113}</UniqueIdentifier>
     </Filter>
+    <Filter Include="creational\Singleton">
+      <UniqueIdentifier>{62d092f8-f418-4499-af71-c9194142c264}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -68,6 +71,12 @@
     </ClCompile>
     <ClCompile Include="creational\Prototype\sourcemaking.cpp">
       <Filter>creational\Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page136_method_suffix.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="creational\Singleton\main.cpp">
+      <Filter>creational\Singleton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +151,9 @@
     </None>
     <None Include="creational\Prototype\sourcemakeing.py">
       <Filter>creational\Prototype</Filter>
+    </None>
+    <None Include="creational\Singleton\main.py">
+      <Filter>creational\Singleton</Filter>
     </None>
   </ItemGroup>
 </Project>

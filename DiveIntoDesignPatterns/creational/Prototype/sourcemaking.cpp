@@ -40,7 +40,7 @@ std::ostream & operator<<(std::ostream & os, const Prototype & pt) {
 }
 
 
-int main(void) {
+int test_prototype(void) {
 
     Sourcemakeing sm("https://sourcemaking.com/design_patterns/prototype/python/1");
     Prototype pt(sm);
