@@ -23,7 +23,7 @@ public:
 };
 
 
-int main(void) {
+int test_singleton(void) {
     auto & s = Singleton::get_instance();
     auto & b = Singleton::get_instance();
     std::cout << &s << std::endl;
