@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 #include <queue>
 #include <mutex>
 #include <thread>
@@ -12,14 +13,13 @@
 * MySQLConnector
 *
 *******************************************************************************/
-MySQLConnector::MySQLConnector(MySQLPool* s) : pool(s) {}
+MySQLConnector::MySQLConnector(MySQLPool * s) : pool(s) {}
 MySQLConnector::~MySQLConnector() {
     std::cout << "Destroy MySQLConnector" << std::endl;
 }
 
 void MySQLConnector::release() {
-    this->pool->release(*this);
-    delete this;
+    this->pool->release(shared_from_this());
 }
 
 
@@ -31,12 +31,13 @@ void MySQLConnector::release() {
 *******************************************************************************/
 MySQLPool::MySQLPool(int max): maxsize(max), idles(max), pendings(0) {
     for (int i = 0; i < maxsize; ++i) {
-        MySQLConnector conn{ this };
+        //MySQLConnector * conn = new MySQLConnector{ this };
+        std::shared_ptr<MySQLConnector> conn(new MySQLConnector{ this });
         this->queue.push(conn);
     }
 }
 
-std::reference_wrapper<MySQLConnector> MySQLPool::get() {
+std::shared_ptr<MySQLConnector> MySQLPool::get() {
     auto ms = std::chrono::milliseconds(10);
     while (!this->mutex.try_lock()) std::this_thread::sleep_for(ms);
 
@@ -48,7 +49,7 @@ std::reference_wrapper<MySQLConnector> MySQLPool::get() {
 }
 
 
-void MySQLPool::release(MySQLConnector& conn) {
+void MySQLPool::release(std::shared_ptr<MySQLConnector> conn) {
     auto ms = std::chrono::milliseconds(10);
     while (!this->mutex.try_lock()) std::this_thread::sleep_for(ms);
 
@@ -73,6 +74,11 @@ int main(void) {
     std::cout << pool << std::endl;          // <MySQLPool idles=49 pendings=1>
     auto conn2 = pool.get();
     std::cout << pool << std::endl;          // <MySQLPool idles=48 pendings=2>
+    conn->release();
+    std::cout << pool << std::endl;          // <MySQLPool idles=49 pendings=1>
+    conn2->release();
+    std::cout << pool << std::endl;          // <MySQLPool idles=50 pendings=0>
 
+    std::cout << "pool pattern" << std::endl;
     return 0;
 }

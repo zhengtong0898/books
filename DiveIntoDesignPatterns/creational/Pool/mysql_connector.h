@@ -5,12 +5,12 @@
 class MySQLPool;
 
 
-class MySQLConnector {
+class MySQLConnector: public std::enable_shared_from_this<MySQLConnector> {
 private:
     MySQLPool * pool;
 
 public:
-    MySQLConnector(MySQLPool* s);
+    MySQLConnector(MySQLPool * s);
     ~MySQLConnector();
 
 public:
