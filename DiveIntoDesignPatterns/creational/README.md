@@ -50,3 +50,10 @@
 
 ### 对象池模式(Pool)
 > 当创建一个对象成本很高, 或使用频率很高周期很短, 这两种情况都需要使用线程池来降低开销.   
+
+
+### 懒惰赋值(Lazy Evaluated)
+> 缓存都属于懒惰赋值:  
+> 1. cached-property: 类层面的成员变量缓存.   
+> 2. cached-function: 函数层面的值缓存.   
+> 3. cached-request:  应用层面的api缓存.   

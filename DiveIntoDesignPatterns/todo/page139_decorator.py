@@ -31,10 +31,10 @@ def foo():
 # 将装饰器函数名改为实际函数名, 让开发者在debug(dir)时更直观知道当前对象时哪个函数.
 #
 #
-# functools.update_wraps(wrapper,
-#                        wrapped,
-#                        assigned = WRAPPER_ASSIGNMENTS,
-#                        updated = WRAPPER_UPDATES)
+# functools.update_wrapper(wrapper,
+#                          wrapped,
+#                          assigned = WRAPPER_ASSIGNMENTS,
+#                          updated = WRAPPER_UPDATES)
 #
 # 以 simple_decorator 代码为例来剖析参数
 #
