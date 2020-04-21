@@ -67,7 +67,7 @@ std::ostream & operator<<(std::ostream & os, MySQLPool & pool) {
 }
 
 
-int main(void) {
+int test_mysqlpool(void) {
 
     MySQLPool pool { 50 };
     auto conn = pool.get();
