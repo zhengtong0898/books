@@ -34,6 +34,9 @@
     <Filter Include="creational\Pool">
       <UniqueIdentifier>{ddf64447-6754-43dd-ba3c-c2c8516a72bf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="creational\LazyEvaluated">
+      <UniqueIdentifier>{d1174cda-7c56-4349-ae93-6e21325b6abd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -166,6 +169,9 @@
     </None>
     <None Include="creational\Pool\python-patterns.py">
       <Filter>creational\Pool</Filter>
+    </None>
+    <None Include="todo\page139_decorator.py">
+      <Filter>todo</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -180,6 +180,7 @@
     <None Include="creational\Prototype\sourcemakeing.py" />
     <None Include="creational\README.md" />
     <None Include="creational\Singleton\main.py" />
+    <None Include="todo\page139_decorator.py" />
     <None Include="uml\page008_class.plantuml" />
     <None Include="uml\page011_inherit.plantuml" />
     <None Include="uml\page016_interface.plantuml" />
