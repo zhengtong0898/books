@@ -1,0 +1,52 @@
+@startuml
+hide empty members
+
+
+class Client {}
+
+
+interface ClientInterface {
+	+ method(data)
+}
+
+
+package "serviceA Adapter" {
+
+	class ServiceA << concrete class >> {
+		...
+		--
+		+ serviceAMethod(special_data)
+	}
+
+	class ServiceAAdapter {
+		- ServiceA service
+		+ method(data)
+	}
+
+	ServiceAAdapter o-right-> ServiceA
+	ServiceAAdapter -up-|> ClientInterface
+}
+
+
+package "serviceB Adapter" {
+
+	class ServiceB << concrete class >> {
+		...
+		--
+		+ OtherServiceMethod(special_Data)
+	}
+
+
+	class ServiceBAdapter {
+		- ServiceB service
+		+ method(data)
+	}
+
+	ServiceBAdapter o-right-> ServiceB
+	ServiceBAdapter -up-|> ClientInterface
+}
+
+
+Client -down-> ClientInterface
+
+@enduml

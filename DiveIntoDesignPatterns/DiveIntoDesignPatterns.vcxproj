@@ -150,9 +150,11 @@
     <ClCompile Include="creational\AbstractFactory\sourcemaking.cpp" />
     <ClCompile Include="creational\FactoryMethod\main.cpp" />
     <ClCompile Include="creational\FactoryMethod\page074.cpp" />
+    <ClCompile Include="creational\LazyEvaluated\lazy_evaluation.cpp" />
     <ClCompile Include="creational\Pool\main.cpp" />
     <ClCompile Include="creational\Prototype\sourcemaking.cpp" />
     <ClCompile Include="creational\Singleton\main.cpp" />
+    <ClCompile Include="structural\Adapter\page147.cpp" />
     <ClCompile Include="todo\page015_protected.cpp" />
     <ClCompile Include="todo\page074_2_abstractclass.cpp" />
     <ClCompile Include="todo\page074_1_polymorphic.cpp" />
@@ -175,11 +177,14 @@
     <None Include="creational\FactoryMethod\page074.plantuml" />
     <None Include="creational\FactoryMethod\page074.py" />
     <None Include="creational\FactoryMethod\main.plantuml" />
+    <None Include="creational\LazyEvaluated\lazy_evaluation.py" />
     <None Include="creational\Pool\python-patterns.py" />
     <None Include="creational\Pool\main.py" />
     <None Include="creational\Prototype\sourcemakeing.py" />
     <None Include="creational\README.md" />
     <None Include="creational\Singleton\main.py" />
+    <None Include="structural\Adapter\page147.plantuml" />
+    <None Include="structural\Adapter\python-patterns.py" />
     <None Include="todo\page139_decorator.py" />
     <None Include="uml\page008_class.plantuml" />
     <None Include="uml\page011_inherit.plantuml" />
@@ -199,6 +204,7 @@
   <ItemGroup>
     <ClInclude Include="creational\Pool\mysql_connector.h" />
     <ClInclude Include="creational\Pool\mysql_pool.h" />
+    <ClInclude Include="todo\page139_metaclass_vs_decorator.py" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

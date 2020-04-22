@@ -37,6 +37,9 @@
     <Filter Include="creational\LazyEvaluated">
       <UniqueIdentifier>{d1174cda-7c56-4349-ae93-6e21325b6abd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="structural\Adapter">
+      <UniqueIdentifier>{192ae8e1-11a1-4ffd-8ae4-c0aa82c434c7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -86,6 +89,12 @@
     </ClCompile>
     <ClCompile Include="creational\Pool\main.cpp">
       <Filter>creational\Pool</Filter>
+    </ClCompile>
+    <ClCompile Include="creational\LazyEvaluated\lazy_evaluation.cpp">
+      <Filter>creational\LazyEvaluated</Filter>
+    </ClCompile>
+    <ClCompile Include="structural\Adapter\page147.cpp">
+      <Filter>structural\Adapter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +182,15 @@
     <None Include="todo\page139_decorator.py">
       <Filter>todo</Filter>
     </None>
+    <None Include="creational\LazyEvaluated\lazy_evaluation.py">
+      <Filter>creational\LazyEvaluated</Filter>
+    </None>
+    <None Include="structural\Adapter\page147.plantuml">
+      <Filter>structural\Adapter</Filter>
+    </None>
+    <None Include="structural\Adapter\python-patterns.py">
+      <Filter>structural\Adapter</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="creational\Pool\mysql_connector.h">
@@ -180,6 +198,9 @@
     </ClInclude>
     <ClInclude Include="creational\Pool\mysql_pool.h">
       <Filter>creational\Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="todo\page139_metaclass_vs_decorator.py">
+      <Filter>todo</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
