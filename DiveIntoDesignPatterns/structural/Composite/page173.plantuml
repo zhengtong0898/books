@@ -1,0 +1,35 @@
+@startuml
+hide empty members
+
+
+class Client {}
+
+
+interface Component {
+	+ execute()
+}
+
+
+class Leaf {
+	...
+	--
+	+ execute()
+}
+
+
+class Composite {
+	- std::vector<std::reference_wrapper<Component>> children
+	+ add(Component & c)
+	+ remove(Component & c)
+	+ std::vector<std::reference_wrapper<Component>> getChildren()
+	+ execute()
+}
+
+
+Client -down-> Component
+
+Leaf .up.|> Component
+Composite .up.|> Component
+
+
+@enduml
