@@ -1,0 +1,49 @@
+@startuml
+hide empty members
+
+
+class Client {}
+
+
+abstract Abstraction {
+	- Implementation impl
+	+ feature1()
+	+ feature2()
+}
+
+
+class RefinedAbstraction1 {
+	...
+	--
+	featureN1()
+}
+
+
+class RefinedAbstraction2 {
+	...
+	--
+	featureN2()
+}
+
+
+interface Implementation {
+	+ method1()
+	+ method2()
+	+ method3()
+}
+
+
+class ConcreteImplementation1 {}
+class ConcreteImplementation2 {}
+
+
+Client -down-> Abstraction
+RefinedAbstraction1 -up-|> Abstraction
+RefinedAbstraction2 -up-|> Abstraction
+
+Abstraction o-right-> Implementation: "                聚合                "
+
+ConcreteImplementation1 .up.|> Implementation
+ConcreteImplementation2 .up.|> Implementation
+
+@enduml
