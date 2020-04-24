@@ -1,0 +1,62 @@
+@startuml
+hide empty members
+
+
+class Client {}
+
+
+interface Component {
+	+ execute()
+}
+
+
+class ConcreteComponent {
+	...
+	--
+	execute()
+}
+
+
+class BaseDecorator {
+	- Component wrapper
+	+ BaseDecorator(Component c)
+	+ execute()
+}
+
+
+class ConcreteDecorator1 {
+	...
+	--
+	+ execute()
+	+ extra()
+}
+
+
+class ConcreteDecorator2 {
+	...
+	--
+	+ execute()
+	+ extra()
+}
+
+
+Client --> Component
+ConcreteComponent .up.|> Component
+
+note "具体组件: \n\
+指的是被装饰的对象.\
+" as n1
+ConcreteComponent .down. n1 
+
+
+BaseDecorator .up.|> Component: "        继承        "
+BaseDecorator o-left-> Component: "        聚合        "
+
+
+ConcreteDecorator1 -up-|> BaseDecorator
+ConcreteDecorator2 -up-|> BaseDecorator
+
+
+
+
+@enduml

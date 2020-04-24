@@ -106,7 +106,7 @@ void ClientCode2(Component* component1, Component* component2) {
 }
 
 
-int main() {
+int test_composite173() {
 
     // 客户端把 Leaf 当作独立对象, 直接根据Component接口进行操作.
     Component* simple = new Leaf;

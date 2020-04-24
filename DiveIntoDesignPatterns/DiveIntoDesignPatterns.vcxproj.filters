@@ -40,6 +40,15 @@
     <Filter Include="structural\Adapter">
       <UniqueIdentifier>{192ae8e1-11a1-4ffd-8ae4-c0aa82c434c7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="structural\Bridge">
+      <UniqueIdentifier>{ac1020d3-ca0c-40e2-bbcc-79b7fc45ddb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="structural\Composite">
+      <UniqueIdentifier>{b0e61a86-81e1-4a74-a6f8-966293c92a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="structural\Decorator">
+      <UniqueIdentifier>{0533f7b2-874e-4edd-a1c7-5b41dda2ce34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -95,6 +104,12 @@
     </ClCompile>
     <ClCompile Include="structural\Adapter\page147.cpp">
       <Filter>structural\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="structural\Composite\page173.cpp">
+      <Filter>structural\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="structural\Decorator\page189.cpp">
+      <Filter>structural\Decorator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +205,24 @@
     </None>
     <None Include="structural\Adapter\python-patterns.py">
       <Filter>structural\Adapter</Filter>
+    </None>
+    <None Include="structural\README.md">
+      <Filter>structural</Filter>
+    </None>
+    <None Include="structural\Bridge\page161.plantuml">
+      <Filter>structural\Bridge</Filter>
+    </None>
+    <None Include="structural\Composite\page173.plantuml">
+      <Filter>structural\Composite</Filter>
+    </None>
+    <None Include="structural\Composite\python-patterns.py">
+      <Filter>structural\Composite</Filter>
+    </None>
+    <None Include="structural\Decorator\page189.plantuml">
+      <Filter>structural\Decorator</Filter>
+    </None>
+    <None Include="structural\Decorator\pythonic.py">
+      <Filter>structural\Decorator</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
