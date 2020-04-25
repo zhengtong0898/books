@@ -51,7 +51,7 @@ public:
 };
 
 
-int main(void) {
+int test_decorator189(void) {
 
     // ²ã²ãÌ×Èë
     ConcreteComponent concrete;
