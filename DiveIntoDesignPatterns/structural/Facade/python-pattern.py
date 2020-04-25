@@ -71,7 +71,7 @@ class ComputerFacade:
         self.cpu.execute()
 
 
-def main():
+def test_facade201():
     """
     >>> computer_facade = ComputerFacade()
     >>> computer_facade.start()
