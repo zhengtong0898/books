@@ -49,6 +49,9 @@
     <Filter Include="structural\Decorator">
       <UniqueIdentifier>{0533f7b2-874e-4edd-a1c7-5b41dda2ce34}</UniqueIdentifier>
     </Filter>
+    <Filter Include="structural\Facade">
+      <UniqueIdentifier>{417182c1-8cb4-4fe0-9606-c8f34e2640ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -110,6 +113,9 @@
     </ClCompile>
     <ClCompile Include="structural\Decorator\page189.cpp">
       <Filter>structural\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="structural\Facade\python-pattern.cpp">
+      <Filter>structural\Facade</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +229,12 @@
     </None>
     <None Include="structural\Decorator\pythonic.py">
       <Filter>structural\Decorator</Filter>
+    </None>
+    <None Include="structural\Facade\python-pattern.plantuml">
+      <Filter>structural\Facade</Filter>
+    </None>
+    <None Include="structural\Facade\python-pattern.py">
+      <Filter>structural\Facade</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

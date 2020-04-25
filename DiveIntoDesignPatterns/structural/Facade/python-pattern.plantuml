@@ -1,0 +1,40 @@
+@startuml
+hide empty members
+
+class Client {}
+
+
+class CPU {
+	+ void Freeze()
+	+ void Jump(long position)
+	+ void Execute()
+}
+
+
+class HardDrive {
+	+ char * Read(long lba, int size)
+}
+
+
+class  Memory {
+	+ void Load(long position, char * data)
+}
+
+
+class ComputerFacade {
+	- std::unique_ptr<CPU> cpu_ = std::make_unique<CPU>()
+	- std::unique_ptr<Memory> memory_ = std::make_unique<Memory>()
+	- std::unique_ptr<HardDrive> hard_drive_ = std::make_unique<HardDrive>()
+	--
+	+ void Start();
+}
+
+
+Client --> ComputerFacade
+
+ComputerFacade *-down-> CPU
+ComputerFacade *-down-> Memory
+ComputerFacade *-down-> HardDrive
+
+
+@enduml
