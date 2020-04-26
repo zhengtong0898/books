@@ -7,3 +7,5 @@
 07. page-136:      [C++] 类函数后面 `=0` , `= delete` , `= default` 分别表示什么意思?
 08. page-139:   [python] 装饰器是在代码加载阶段就运行了吗?
 09. page-139:   [python] metaclass和装饰器有什么区别吗?
+10. page-207:      [C++] 指针当作值变量传递给函数, 会复制一个指针出来吗?
+11. page-207:      [C++] weakref 和 std::reference_wrapper 有什么区别?
