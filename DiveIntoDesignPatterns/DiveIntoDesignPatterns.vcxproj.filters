@@ -52,6 +52,9 @@
     <Filter Include="structural\Facade">
       <UniqueIdentifier>{417182c1-8cb4-4fe0-9606-c8f34e2640ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="structural\Flyweight">
+      <UniqueIdentifier>{bf3f68fc-a9d0-4ae6-9ad4-b26188170d9c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -116,6 +119,12 @@
     </ClCompile>
     <ClCompile Include="structural\Facade\python-pattern.cpp">
       <Filter>structural\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="structural\Flyweight\sourcemakeing.cpp">
+      <Filter>structural\Flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page207_pass_pointer_by_value.cpp">
+      <Filter>todo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -235,6 +244,9 @@
     </None>
     <None Include="structural\Facade\python-pattern.py">
       <Filter>structural\Facade</Filter>
+    </None>
+    <None Include="structural\Flyweight\python-patterns.py">
+      <Filter>structural\Flyweight</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

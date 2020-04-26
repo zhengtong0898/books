@@ -158,6 +158,7 @@
     <ClCompile Include="structural\Composite\page173.cpp" />
     <ClCompile Include="structural\Decorator\page189.cpp" />
     <ClCompile Include="structural\Facade\python-pattern.cpp" />
+    <ClCompile Include="structural\Flyweight\sourcemakeing.cpp" />
     <ClCompile Include="todo\page015_protected.cpp" />
     <ClCompile Include="todo\page074_2_abstractclass.cpp" />
     <ClCompile Include="todo\page074_1_polymorphic.cpp" />
@@ -165,6 +166,7 @@
     <ClCompile Include="todo\page109_return_difftype.cpp" />
     <ClCompile Include="todo\page121_access_privatet.cpp" />
     <ClCompile Include="todo\page136_method_suffix.cpp" />
+    <ClCompile Include="todo\page207_pass_pointer_by_value.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -195,6 +197,7 @@
     <None Include="structural\Decorator\pythonic.py" />
     <None Include="structural\Facade\python-pattern.plantuml" />
     <None Include="structural\Facade\python-pattern.py" />
+    <None Include="structural\Flyweight\python-patterns.py" />
     <None Include="structural\README.md" />
     <None Include="todo\page139_decorator.py" />
     <None Include="uml\page008_class.plantuml" />

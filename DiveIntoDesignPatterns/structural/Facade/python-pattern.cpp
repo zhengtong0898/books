@@ -34,7 +34,8 @@ private:
     std::unique_ptr<HardDrive> hard_drive_ = std::make_unique<HardDrive>();
 };
 
-int main() {
+int test_facade(void) {
     ComputerFacade computer;
     computer.Start();
+    return 0;
 }
