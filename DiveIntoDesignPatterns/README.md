@@ -22,8 +22,9 @@
 
 
 ### 资源
-> [菜鸟教程](https://www.runoob.com/design-pattern/facade-pattern.html)   
-> [python-pattern](https://github.com/faif/python-patterns)
-> [wikipedia](https://en.wikipedia.org)
-> [sourcemaking](https://sourcemaking.com/design_patterns)
-> [知乎](https://www.zhihu.com/)
+> [菜鸟教程](https://www.runoob.com/design-pattern/facade-pattern.html)     
+> [python-pattern](https://github.com/faif/python-patterns)   
+> [wikipedia](https://en.wikipedia.org)   
+> [sourcemaking](https://sourcemaking.com/design_patterns)   
+> [知乎](https://www.zhihu.com/)   
+> [python design patterns](https://python-patterns.guide/)   
