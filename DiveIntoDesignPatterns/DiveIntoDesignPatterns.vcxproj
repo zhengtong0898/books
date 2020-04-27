@@ -159,6 +159,7 @@
     <ClCompile Include="structural\Decorator\page189.cpp" />
     <ClCompile Include="structural\Facade\python-pattern.cpp" />
     <ClCompile Include="structural\Flyweight\sourcemakeing.cpp" />
+    <ClCompile Include="structural\Proxy\python-patterns.cpp" />
     <ClCompile Include="todo\page015_protected.cpp" />
     <ClCompile Include="todo\page074_2_abstractclass.cpp" />
     <ClCompile Include="todo\page074_1_polymorphic.cpp" />
@@ -198,6 +199,8 @@
     <None Include="structural\Facade\python-pattern.plantuml" />
     <None Include="structural\Facade\python-pattern.py" />
     <None Include="structural\Flyweight\python-patterns.py" />
+    <None Include="structural\Proxy\page222.plantuml" />
+    <None Include="structural\Proxy\python-patterns.py" />
     <None Include="structural\README.md" />
     <None Include="todo\page139_decorator.py" />
     <None Include="uml\page008_class.plantuml" />

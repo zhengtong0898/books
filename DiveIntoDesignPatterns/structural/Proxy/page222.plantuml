@@ -1,0 +1,37 @@
+@startuml
+hide empty members
+
+
+class Client {}
+
+
+interface ServiceInterface << 接口类 >> {
+	+ operation()
+}
+
+
+class Proxy << 代理类 >> {
+	- Service real_service
+	---
+	+ Proxy(Service s)
+	+ check_access()
+	+ operation()
+}
+
+
+class Service << 被代理类 >> {
+	...
+	--
+	+ operation()
+}
+
+
+Client -right-> ServiceInterface
+
+
+Proxy .u.|> ServiceInterface
+Service .up.|> ServiceInterface
+
+Proxy o-right-> Service
+
+@enduml
