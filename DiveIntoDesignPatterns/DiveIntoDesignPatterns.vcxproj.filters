@@ -132,6 +132,18 @@
     <ClCompile Include="structural\Proxy\python-patterns.cpp">
       <Filter>structural\Proxy</Filter>
     </ClCompile>
+    <ClCompile Include="todo\page10001_override.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page10002_weakref_vs_reference_wrapper.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page10003_cmdline_paras_constexpr.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page10004_CRTP_equal_lazy_evaluation.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="uml\page008_class.plantuml">
