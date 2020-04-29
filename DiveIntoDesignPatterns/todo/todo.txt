@@ -12,3 +12,4 @@
 12. page-10002:    [C++] weakref 和 std::reference_wrapper 有什么区别?
 13. page-10003:    [C++] 命令行参数能不能用 constexpr 编译期来分流?
 14. page-10004:    [C++] CRTP 也是 lazy evaluation ?
+15. page-10005:    [C++] dynamic_cast shared_ptr ?
