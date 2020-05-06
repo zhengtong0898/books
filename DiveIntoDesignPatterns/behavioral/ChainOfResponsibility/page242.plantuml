@@ -1,6 +1,37 @@
 @startuml
+hide empty members
 
 
+class Client {}
+
+
+interface Handler {
+	+ set_next(Handler h)
+	+ handler(Request req)
+}
+
+
+abstract class BaseHandler {
+	- Handler next;
+	--
+	+ set_handler(Handler h)
+	+ handle(Request req)
+}
+
+
+class ConcreteHandler {
+	...
+	--
+	+ handle(Request req)
+}
+
+
+Handler <|.down. BaseHandler
+Handler <..o BaseHandler
+ConcreteHandler-up-|> BaseHandler
+
+
+Handler <-left- Client
 
 
 @enduml
