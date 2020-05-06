@@ -55,7 +55,7 @@ public:
 };
 
 
-class TiffImage: public ImageDispather<TiffImage> {
+class TiffImage2 : public ImageDispather<TiffImage2> {
 public:
     void 
     Draw() {
@@ -72,7 +72,7 @@ public:
 
 int test_ImageDispather() {
     // An Image type pointer pointing to Tiffimage 
-    ImageDispather<TiffImage> * pImage = new TiffImage;
+    std::shared_ptr<ImageDispather<TiffImage2>> pImage{ new TiffImage2 };
 
     // Store time before virtual function calls 
     auto then = Clock::now();

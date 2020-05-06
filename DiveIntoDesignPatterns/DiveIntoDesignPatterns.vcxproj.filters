@@ -58,6 +58,9 @@
     <Filter Include="structural\Proxy">
       <UniqueIdentifier>{d956fcad-a4a7-4782-addd-49661cf14fa6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="behavioral\ChainOfResponsibility">
+      <UniqueIdentifier>{70f92b38-7b01-41b0-92c6-4a7a690973df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -143,6 +146,12 @@
     </ClCompile>
     <ClCompile Include="todo\page10004_CRTP_equal_lazy_evaluation.cpp">
       <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="todo\page10005_sharedptr_dynamic_cast.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="behavioral\ChainOfResponsibility\page242.cpp">
+      <Filter>behavioral\ChainOfResponsibility</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -271,6 +280,12 @@
     </None>
     <None Include="structural\Proxy\python-patterns.py">
       <Filter>structural\Proxy</Filter>
+    </None>
+    <None Include="behavioral\README.md">
+      <Filter>behavioral</Filter>
+    </None>
+    <None Include="behavioral\ChainOfResponsibility\page242.plantuml">
+      <Filter>behavioral\ChainOfResponsibility</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
