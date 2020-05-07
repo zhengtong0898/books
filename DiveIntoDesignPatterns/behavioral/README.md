@@ -60,4 +60,4 @@
 >    To execute a command, it passes the command object to the invoker object.      
 >
 > 是什么?
->    
+>    命令模式
