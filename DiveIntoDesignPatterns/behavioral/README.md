@@ -59,5 +59,20 @@
 >    The client decides which commands to execute at which points.    
 >    To execute a command, it passes the command object to the invoker object.      
 >
-> 是什么?
->    命令模式
+> 是什么?    
+>    命令模式的标准场景是类似数据库的事务模型, 将一系列查询、写入语句包裹成一个事务,    
+>    事务引擎不仅仅是简单的执行每个语句, 它要求每个语句都提供自己的回滚能力,    
+>    事务执行过程中, 任意一个语句执行失败, 那么就会触发每个语句的回滚函数,    
+>    使数据库恢复到执行事务之前的状态.    
+>     
+>    在编程领域中, 将数据库操作转移成对用的对象应该是像下面这样:    
+>    `select * from table` 对应的是 `def select(table_name, *show_fields)`    
+>    `insert into table (field1, field2) values ("v1", "v2");` 对应的是 `def insert(table_name, **kv)`   
+> 
+>    命令模式是将多个 `命令` 封装成一个事务对象, 这个事务对象被称为 `invoker`.   
+>    每个 `命令` 都严格按照 `命令接口` 来做实现, 既要包含 `执行(execute)` 也要包含 `回滚(undo)`   
+>    `具体命令对象`分为简单的和常规的, `简单的具体命令对象`直接实现具体逻辑, `常规的具体命令对象`将负责执行`receiver`和提供`receiver`需要的参数.   
+>    `receiver`负责具体的业务逻辑, 它和`简单的具体命令对象`一样.   
+>    
+> 哪些项目中使用到了命令模式?   
+> TODO: 待补充

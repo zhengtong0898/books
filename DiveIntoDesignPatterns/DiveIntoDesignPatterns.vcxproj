@@ -149,6 +149,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="behavioral\ChainOfResponsibility\page242.cpp" />
+    <ClCompile Include="behavioral\Command\page262.cpp" />
     <ClCompile Include="creational\AbstractFactory\sourcemaking.cpp" />
     <ClCompile Include="creational\FactoryMethod\main.cpp" />
     <ClCompile Include="creational\FactoryMethod\page074.cpp" />
@@ -183,6 +184,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="behavioral\ChainOfResponsibility\page242.plantuml" />
+    <None Include="behavioral\ChainOfResponsibility\python-pattern.py" />
+    <None Include="behavioral\ChainOfResponsibility\wikipedia.py" />
     <None Include="behavioral\README.md" />
     <None Include="creational\AbstractFactory\sourcemaking.plantuml" />
     <None Include="creational\AbstractFactory\sourcemaking.py" />
