@@ -64,6 +64,9 @@
     <Filter Include="behavioral\Command">
       <UniqueIdentifier>{18e5db28-976f-4b48-9e66-9addbe1d4e2b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="behavioral\Iterator">
+      <UniqueIdentifier>{7ebb1e45-5e3f-4ca3-bc0c-88367079e871}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md" />
@@ -158,6 +161,9 @@
     </ClCompile>
     <ClCompile Include="behavioral\Command\page262.cpp">
       <Filter>behavioral\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="behavioral\Iterator\page278.cpp">
+      <Filter>behavioral\Iterator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

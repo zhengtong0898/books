@@ -76,3 +76,21 @@
 >    
 > 哪些项目中使用到了命令模式?   
 > TODO: 待补充
+
+
+### 迭代器模式(Iterator)
+> what is about this pattern?    
+>     from wikipedia:     
+>     In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to     
+>     traverse a container and access the container's elements. The iterator pattern decouples algorithms from     
+>     containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.     
+> 
+> 是什么?   
+>     迭代器模式用于遍历数据集中的元素, 迭代器负责解耦算法和数据集间的耦合, 并不是所有数据集都能和谐共处,      
+>     有的数据集必须按照特定算法才能遍历; 例如: `vector/list/deque/set` 都支持 `back_push` 迭代器,    
+>     但是 `map` 不支持 `back_push`, 它仅支持 `random insert` 迭代器.   
+> 
+> 再那些项目中使用了迭代器模式?    
+> C++ 的标准库中大量使用了这个模式, 而且还玩出了火花....    
+> python 的 __iter__, __next__, __aiter__, __await__, __anext__ 用于支持迭代器机制.  
+

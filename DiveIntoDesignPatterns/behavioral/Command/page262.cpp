@@ -117,7 +117,7 @@ public:
 /*
  * The client code can parameterize an invoker with any commands.
  */
-int main() {
+int test_command_pattern_262() {
     Invoker* invoker = new Invoker;
     invoker->SetOnStart(new SimpleCommand("Say Hi!"));
     Receiver* receiver = new Receiver;

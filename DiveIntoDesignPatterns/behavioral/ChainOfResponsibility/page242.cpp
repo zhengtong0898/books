@@ -103,7 +103,7 @@ void ClientCode(Handler& handler) {
 /**
  * The other part of the client code constructs the actual chain.
  */
-int main() {
+int test_chain_of_responsibility_242() {
     MonkeyHandler* monkey = new MonkeyHandler;
     SquirrelHandler* squirrel = new SquirrelHandler;
     DogHandler* dog = new DogHandler;

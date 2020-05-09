@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClCompile Include="behavioral\ChainOfResponsibility\page242.cpp" />
     <ClCompile Include="behavioral\Command\page262.cpp" />
+    <ClCompile Include="behavioral\Iterator\page278.cpp" />
     <ClCompile Include="creational\AbstractFactory\sourcemaking.cpp" />
     <ClCompile Include="creational\FactoryMethod\main.cpp" />
     <ClCompile Include="creational\FactoryMethod\page074.cpp" />
