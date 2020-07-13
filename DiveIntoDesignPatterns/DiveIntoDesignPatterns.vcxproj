@@ -196,6 +196,7 @@
     <None Include="creational\FactoryMethod\page074.plantuml" />
     <None Include="creational\FactoryMethod\page074.py" />
     <None Include="creational\FactoryMethod\main.plantuml" />
+    <None Include="creational\FactoryMethod\README.md" />
     <None Include="creational\LazyEvaluated\lazy_evaluation.py" />
     <None Include="creational\Pool\python-patterns.py" />
     <None Include="creational\Pool\main.py" />

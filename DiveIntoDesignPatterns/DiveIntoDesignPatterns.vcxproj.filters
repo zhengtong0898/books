@@ -305,6 +305,9 @@
     <None Include="behavioral\ChainOfResponsibility\wikipedia.py">
       <Filter>behavioral\ChainOfResponsibility</Filter>
     </None>
+    <None Include="creational\FactoryMethod\README.md">
+      <Filter>creational\FactoryMethod</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="creational\Pool\mysql_connector.h">
