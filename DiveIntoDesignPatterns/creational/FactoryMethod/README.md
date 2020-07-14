@@ -1,4 +1,4 @@
-# 什么是工厂方法?
+# 什么是工厂方法(Factory Method)?
 A Factory is an object for creating other objects.    
 用于创建对象的对象(函数)被称为工厂方法.   
 

@@ -1,4 +1,4 @@
-# 抽象工厂模式
+# 抽象工厂模式(Abstract Factory)
 The Abstract Factory Pattern serves to provide an interface for creating related/dependent objects without need to specify their actual class.   
 1. 抽象工厂提供一组接口用于规范创建相关/依赖对象的行为, 由于是定义接口, 这个环节不需要声明具体类对象.  
 2. 具体工厂按照抽象工厂的接口来创建具体类.  
@@ -6,3 +6,6 @@ The Abstract Factory Pattern serves to provide an interface for creating related
 
 这三个环节组合在一起完成的复杂对象创建被称为工厂模式.   
 
+
+# 总结
+设计模式编码与无模式编码，很多时候并不能减少代码量, 而是让代码层级结构编排的相对缜密.  
