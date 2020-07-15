@@ -1,0 +1,25 @@
+@startuml
+hide empty members
+
+class Client
+
+
+class Singleton {
+	- static Singleton * instance;
+	---
+	+ Singleton() {};
+    + static Singleton * getInstance();
+}
+
+Client -right-> Singleton: "依赖"
+
+note "\
+Singleton * getInstance() {\n\
+    if (Singleton::instance == nullptr) { \n\
+	    Singleton::instance = new Singleton; \n\
+	} \n\
+	return Singleton::instance; \n\
+}\
+" as n1
+Singleton .down. n1
+@enduml
