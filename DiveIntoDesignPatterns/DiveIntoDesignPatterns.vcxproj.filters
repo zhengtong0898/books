@@ -308,6 +308,18 @@
     <None Include="creational\FactoryMethod\README.md">
       <Filter>creational\FactoryMethod</Filter>
     </None>
+    <None Include="creational\AbstractFactory\README.md">
+      <Filter>creational\AbstractFactory</Filter>
+    </None>
+    <None Include="creational\Builder\README.md">
+      <Filter>creational\Builder</Filter>
+    </None>
+    <None Include="creational\Prototype\README.md">
+      <Filter>creational\Prototype</Filter>
+    </None>
+    <None Include="creational\Prototype\page123.plantuml">
+      <Filter>creational\Builder</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="creational\Pool\mysql_connector.h">

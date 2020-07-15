@@ -1,0 +1,61 @@
+@startuml
+hide empty members
+
+
+class Client
+
+
+interface Prototype {
+	...
+	Prototype clone();
+}
+
+
+class ConcretePrototype {
+	- std::string field1
+	---
+	+ ConcretePrototype(ConcretePrototype & other);
+	+ ConcretePrototype clone();
+}
+
+
+class SubConcretePrototype {
+	- std::string field2
+	---
+	+ SubConcretePrototype(SubConcretePrototype & other);
+	+ SubConcretePrototype clone();
+}
+
+Client -right-> Prototype: "依赖"
+
+Prototype <|.. ConcretePrototype: "接口"
+
+ConcretePrototype <|-- SubConcretePrototype: "继承"
+
+
+note "\
+ConcretePrototype(ConcretePrototype & other) {\n\
+    cp.field1 = other.field1; \n\
+}\n\
+\n\
+ConcretePrototype clone() { \n\
+    return ConcretePrototype(this) \n\
+}\
+" as n1
+ConcretePrototype .right. n1
+
+
+note "\
+SubConcretePrototype(SubConcretePrototype & other) {\n\
+    super(other); \n\
+    scp.field2 = other.field2; \n\
+}\n\
+\n\
+SubConcretePrototype clone() {\n\
+    return SubConcretePrototype(this) \n\
+}\
+" as n2
+SubConcretePrototype .right. n2
+
+
+@enduml
