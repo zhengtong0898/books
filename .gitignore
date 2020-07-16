@@ -3,10 +3,8 @@ DataStructuresAlgorithms/Debug/
 DataStructuresAlgorithms/Release/
 DataStructuresAlgorithms/x64/
 DiveIntoDesignPatterns/x64/
-DiveIntoDesignPatterns/DiveIntoDesignPatterns.vcxproj
-DiveIntoDesignPatterns/DiveIntoDesignPatterns.vcxproj.filters
-DiveIntoDesignPatterns/DiveIntoDesignPatterns.vcxproj.user
-DataStructuresAlgorithms/DataStructuresAlgorithms.sln
-DataStructuresAlgorithms/DataStructuresAlgorithms.vcxproj
-DataStructuresAlgorithms/DataStructuresAlgorithms.vcxproj.filters
-DataStructuresAlgorithms/ataStructuresAlgorithms.vcxproj.user
+.vcxproj
+.vcxproj.filters
+.vcxproj.user
+.sln
+
