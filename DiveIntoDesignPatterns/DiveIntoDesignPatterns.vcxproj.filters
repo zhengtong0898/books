@@ -317,8 +317,14 @@
     <None Include="creational\Prototype\README.md">
       <Filter>creational\Prototype</Filter>
     </None>
+    <None Include="creational\Singleton\README.md">
+      <Filter>creational\Singleton</Filter>
+    </None>
+    <None Include="creational\Singleton\page135.plantuml">
+      <Filter>creational\Singleton</Filter>
+    </None>
     <None Include="creational\Prototype\page123.plantuml">
-      <Filter>creational\Builder</Filter>
+      <Filter>creational\Prototype</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

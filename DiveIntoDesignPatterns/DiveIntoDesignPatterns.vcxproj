@@ -207,6 +207,8 @@
     <None Include="creational\Prototype\sourcemakeing.py" />
     <None Include="creational\README.md" />
     <None Include="creational\Singleton\main.py" />
+    <None Include="creational\Singleton\page135.plantuml" />
+    <None Include="creational\Singleton\README.md" />
     <None Include="structural\Adapter\page147.plantuml" />
     <None Include="structural\Adapter\python-patterns.py" />
     <None Include="structural\Bridge\page161.plantuml" />
