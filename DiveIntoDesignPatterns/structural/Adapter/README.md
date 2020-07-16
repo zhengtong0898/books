@@ -6,3 +6,7 @@
 
 适配器让接口不兼容的对象能相互合作.
 
+# 补充
+The adapter pattern allows the interface of an existing class to be used as another interface.   
+It is often used to make existing classes work with others without modifying their source code. 
+
